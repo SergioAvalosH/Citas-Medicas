@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aplicación - Citas Médicas</string>
+    <!-- Strings de la ventana administrador -->
+    <string name="title_admi_menu">Bienvenido</string>
+    <string name="lbl_btn_gestionar_profiles">Gestionar Perfiles</string>
+    <string name="lbl_btn_gestionar_med_espec">Gestionar Medicos y Especialidades</string>
+    <string name="lbl_btn_gestionar_citas">Gestionar Citas</string>
+    <string name="lbl_btn_logout">Cerrar Sesión</string>
+
+    <!-- String de la ventas Gestion de perfiles -->
+</resources>
