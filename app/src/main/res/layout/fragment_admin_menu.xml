@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/adminMenu"
     android:layout_width="match_parent"
@@ -16,7 +17,76 @@
         android:orientation="vertical"
         tools:ignore="UselessParent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_horizontal"
+            android:text="@string/title_admi_menu"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="15dp"
+            android:drawableLeft="@drawable/ic_managment_profiles"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/lbl_btn_gestionar_profiles"
+            android:textSize="15sp"
+            app:backgroundTint="#5E71E3"
+            tools:ignore="ButtonStyle,RtlHardcoded" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="15dp"
+            android:drawableLeft="@drawable/ic_managment_medical"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/lbl_btn_gestionar_med_espec"
+            android:textSize="15sp"
+            app:backgroundTint="#5E71E3"
+            tools:ignore="ButtonStyle,RtlHardcoded" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginEnd="15dp"
+            android:drawableLeft="@drawable/ic_managment_citas"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/lbl_btn_gestionar_citas"
+            android:textSize="15sp"
+            app:backgroundTint="#5E71E3"
+            tools:ignore="ButtonStyle,RtlHardcoded" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginEnd="15dp"
+            android:drawableLeft="@drawable/ic_logout"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/lbl_btn_logout"
+            android:textSize="15sp"
+            app:backgroundTint="#5E71E3"
+            tools:ignore="ButtonStyle,RtlHardcoded" />
 
     </RelativeLayout>
 
