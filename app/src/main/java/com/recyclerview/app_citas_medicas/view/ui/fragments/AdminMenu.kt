@@ -1,10 +1,12 @@
 package com.recyclerview.app_citas_medicas.view.ui.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.recyclerview.app_citas_medicas.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -36,6 +38,14 @@ class AdminMenu : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_admin_menu, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val button = view.findViewById<Button>(R.id.btn_manage_profiles)
+        button.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_adminMenu_to_gestionPerfiles)
+        }
     }
 
     companion object {
