@@ -7,5 +7,8 @@
     <string name="lbl_btn_gestionar_citas">Gestionar Citas</string>
     <string name="lbl_btn_logout">Cerrar Sesión</string>
 
-    <!-- String de la ventas Gestion de perfiles -->
+    <!-- String de la ventana Gestion de perfiles -->
+    <string name="title_menu_profiles">Gestión de Perfiles</string>
+    <string name="lbl_btn_edit_profile">Editar Perfil</string>
+    <string name="lbl_btn_new_profile">Nuevo Perfil</string>
 </resources>
