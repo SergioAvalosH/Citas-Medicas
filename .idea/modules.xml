@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Compartido_Proyecto.app-citas-medicas.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Compartido_Proyecto.app-citas-medicas.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app-citas-medicas.iml" filepath="$PROJECT_DIR$/.idea/modules/app-citas-medicas.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app-citas-medicas.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app-citas-medicas.app.iml" />
     </modules>
