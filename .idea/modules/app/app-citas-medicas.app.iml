@@ -5,7 +5,36 @@
       <configuration>
         <option name="GRADLE_PROJECT_PATH" value=":app" />
         <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="4.1.3" />
+<<<<<<< HEAD
         <option name="LAST_KNOWN_AGP_VERSION" value="4.1.3" />
+=======
+        <option name="LAST_KNOWN_AGP_VERSION" value="7.0.1" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="4" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/6252ce7dd0e8c863b1630ead467e518c/transformed/jetified-firebase-storage-ktx-20.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/f6a77dd924e7184c8559a37136cceaa5/transformed/navigation-fragment-ktx-2.3.5-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/ed893ec4ece8607369cc58a2258b8599/transformed/jetified-fragment-ktx-1.2.4-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/967ae30dc55d461c5a2fb2702b11b578/transformed/navigation-ui-ktx-2.3.5-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/703003a5d632cb536ac44430eadf7b5d/transformed/navigation-runtime-ktx-2.3.5-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/213881dc0f2e8677c42f74016ee09e92/transformed/jetified-activity-ktx-1.1.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/e43b7adf3f61b2e50adb190df14dbbcb/transformed/jetified-core-ktx-1.6.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/61f103b19e029649e254486296834a60/transformed/navigation-ui-2.3.5-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/ae0b613a758a3cd30d9df61d3d748619/transformed/material-1.4.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/3fe622fa5eab7016e162442ca43c21df/transformed/appcompat-1.3.1-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/8884d91a0b56f8303e32794b72d81527/transformed/legacy-support-v4-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/1a91a4cbe4b9942d8bfa28079c4fdd83/transformed/jetified-viewpager2-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/e2d55bd1540756f7ba71fe637fb98bc5/transformed/navigation-fragment-2.3.5-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/c23e16addcd651e11510b47d8428a006/transformed/jetified-firebase-analytics-19.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/8af0b84cb39920e77fb2642444864b03/transformed/jetified-play-services-measurement-19.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/4cb89bbe2464f2cfc9f84e1a39a01d98/transformed/jetified-play-services-measurement-api-19.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/f903476d6e705518ba37b794fd103583/transformed/jetified-play-services-measurement-sdk-19.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/27c9a2835b83b80448d9f2d5f30d38d9/transformed/jetified-firebase-common-ktx-20.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/8f1d8cacdc885bb8769ba2c4080d5366/transformed/jetified-firebase-storage-20.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/b0ecfa64c3cc31c4ebe6402c41664abe/transformed/jetified-firebase-installations-17.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/c0015cbcb6b70f74eb7ff7ff2c1d4f6c/transformed/jetified-firebase-appcheck-interop-16.0.0-beta01-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/5041168bc2914b6ed78bc16b350728cf/transformed/jetified-firebase-auth-interop-18.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/1533fcc90dab00d462c90c63ed8049af/transformed/jetified-firebase-common-20.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/41e659971421e516ef9bb3b0ee00c6db/transformed/jetified-firebase-installations-interop-17.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/c291f743ce89315de1421a78ab888ff4/transformed/jetified-play-services-base-17.1.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/2002f4ba2d1d98805b6abec0ef0533b2/transformed/jetified-play-services-tasks-17.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/787421311d2edf23e61b24adbeb7d279/transformed/jetified-play-services-measurement-impl-19.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/61b514a34175382a9b69c7d782570b76/transformed/jetified-play-services-ads-identifier-17.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/f8ae54455b631e0055d95267568a212b/transformed/jetified-play-services-measurement-sdk-api-19.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/08a87dc4d831586dd2333fa3106b1d3d/transformed/jetified-play-services-measurement-base-19.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/550366decb5e5c1f16a345f6218e8d1d/transformed/jetified-play-services-stats-17.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/be8376f5c04341a91bae60df13d4a790/transformed/jetified-firebase-measurement-connector-19.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/0ffd0ccbe86b7e8077370097c7b5a536/transformed/jetified-play-services-basement-17.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/4fc79e4a5fddc4ca9cb7cf154e49ed36/transformed/fragment-1.3.6-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/893cc81f2019c80d54b7fe74c370fd17/transformed/navigation-runtime-2.3.5-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/be423439fe6f3e8217f4fdba433890ec/transformed/jetified-activity-1.2.4-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/dac76ec095adc5e1f306ed16a4e11265/transformed/jetified-appcompat-resources-1.3.1-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/7ca0929874c18ae0787221a4120404fc/transformed/legacy-support-core-ui-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/bfaaadfab856e27bd69af3e4fa6046c3/transformed/drawerlayout-1.1.1-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/a90ab3fc6e5dea938abfa093dd971eb7/transformed/coordinatorlayout-1.1.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/7e6cc368d937129905f6a15ec7cb320d/transformed/dynamicanimation-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/17f51eef342a0d9973a5ddb8cc90644e/transformed/recyclerview-1.1.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/9abe9a61f8a724e281c49a7e0eb82b91/transformed/transition-1.3.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/cdabaf2e82cecb3ef7ba3ca9046cc00b/transformed/vectordrawable-animated-1.1.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/bc923ca00620a3b83789c958d8ee46c7/transformed/vectordrawable-1.1.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/1b9ced2275e4ea713abb70db4da067cd/transformed/media-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/080db1159c7431e02f271b429308473b/transformed/legacy-support-core-utils-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/f9dd8d30be4a8369d77853624b3e8217/transformed/viewpager-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/fc29e1266f94e698682c4c8e4d9909cd/transformed/loader-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/b56920a1808531b8aea2e40d2fcabd41/transformed/slidingpanelayout-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/b59c36f73420c8af8f7da494de8cd865/transformed/customview-1.1.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/09c60ce70b284aa2397efb05b2c0a7c1/transformed/swiperefreshlayout-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/2ec5d2ea2869017f2cb84e1203aa0251/transformed/asynclayoutinflater-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/294cb5478dd1614353dcbd4f105ce85d/transformed/core-1.6.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/10dcca42291e6cd89d44bf781ff1b1cf/transformed/cursoradapter-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/ac8f739a7e037a833305ee0f9d0cc5e6/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/898331de8fa4f73b817bc28b31766bd3/transformed/jetified-savedstate-1.1.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/0c6d595c430f56403816af4744149ac5/transformed/cardview-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/3233143f398701247a44ea965bda4150/transformed/jetified-lifecycle-runtime-ktx-2.2.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/876a433ab11dd4b1921694d3200ec3d3/transformed/lifecycle-runtime-2.3.1-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/c2d885fa37409e4d8cdab119a21fd246/transformed/jetified-firebase-components-17.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/c6825f862b0202fea06ccdad13552c0b/transformed/versionedparcelable-1.1.1-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/d8718beebcd4e548b6e54a8682048533/transformed/jetified-lifecycle-viewmodel-ktx-2.2.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/b19ffe4b4b8075bd60ae85fee445d1a0/transformed/lifecycle-viewmodel-2.3.1-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/2fd6c6e1118bb687814ca00e72257700/transformed/jetified-collection-ktx-1.1.0.jar;C:/Users/Lenyn/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/4000fa069f2b55bbe1c9fea93788cff4/transformed/jetified-lifecycle-livedata-core-ktx-2.2.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/d353ae7a9bceeb67bec7bd758e6f2b8f/transformed/lifecycle-livedata-2.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/f3baab63cbf4509806f7347d619f83fc/transformed/lifecycle-livedata-core-2.3.1-api.jar;C:/Users/Lenyn/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.3.1/fc466261d52f4433863642fb40d12441ae274a98/lifecycle-common-2.3.1.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/09e60bd565da1900a3f236d596b34a43/transformed/core-runtime-2.1.0-api.jar;C:/Users/Lenyn/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/4ef4e5707a972ae8913035833e34db52/transformed/documentfile-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/b2034c35b18604af766a8c6f6d3d3817/transformed/localbroadcastmanager-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/fa082d00b55bce240da126b8797ebc8f/transformed/print-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/cbcb1eeb1ef2406778533deef0493150/transformed/interpolator-1.0.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/dd9d780466a8aa0e80960aada076d35a/transformed/navigation-common-ktx-2.3.5-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/7965fab8092ea5ef1d9664cd892bfa9a/transformed/navigation-common-2.3.5-api.jar;C:/Users/Lenyn/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.2.0/57136ff68ee784c6e19db34ed4a175338fadfde1/annotation-1.2.0.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/de29e039d1f0ec3081767164a5551569/transformed/jetified-annotation-experimental-1.1.0-api.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/759d23428457b8f27f693cb9d10a5f29/transformed/jetified-firebase-annotations-16.0.0.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/8316ad4a6479e9ee24a455c64960fb56/transformed/jetified-kotlin-stdlib-jdk7-1.3.72.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/7e09af2fed708bd48181d2ef107d3190/transformed/jetified-kotlinx-coroutines-android-1.3.0.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/ea3b5af3d813e5a9a31b61f9d0a2e066/transformed/jetified-kotlinx-coroutines-core-1.3.0.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/6188cacbc2fbbc10fded9581aaa50249/transformed/jetified-kotlin-stdlib-1.5.21.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/28676eb5160dde7a78d377389c5fce05/transformed/jetified-annotations-13.0.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/473818d2f84231b7a77d17bcbc89fd8d/transformed/jetified-kotlin-stdlib-common-1.5.21.jar;C:/Users/Lenyn/.gradle/caches/transforms-3/415ae7502a925c30d15dbd3b0aa620fc/transformed/constraintlayout-2.1.0-api.jar;C:/Users/Lenyn/AppData/Local/Android/Sdk/platforms/android-30/android.jar;C:/Users/Lenyn/AppData/Local/Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="languageVersion" value="1.5" />
+          <option name="apiVersion" value="1.5" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+>>>>>>> origin/master
       </configuration>
     </facet>
     <facet type="android" name="Android">
@@ -19,11 +48,16 @@
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+<<<<<<< HEAD
         <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/debug/res;file://$MODULE_DIR$/../../../app/build/generated/res/google-services/debug;file://$MODULE_DIR$/../../../app/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/debug" />
+=======
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/debug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/debug" />
+>>>>>>> origin/master
         <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/androidTest/res;file://$MODULE_DIR$/../../../app/src/androidTestDebug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/androidTest/debug" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
+<<<<<<< HEAD
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="4" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
         <compilerSettings />
@@ -39,16 +73,28 @@
         </compilerArguments>
       </configuration>
     </facet>
+=======
+>>>>>>> origin/master
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debug/classes" />
     <output-test url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debugUnitTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../app">
+<<<<<<< HEAD
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/androidTest/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/res" type="java-resource" />
+=======
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/res/resValues/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/androidTest/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/test/java" isTestSource="true" />
+>>>>>>> origin/master
       <excludeFolder url="file://$MODULE_DIR$/../../../app/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../app/build" />
     </content>
