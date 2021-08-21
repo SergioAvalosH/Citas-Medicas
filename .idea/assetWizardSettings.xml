@@ -328,7 +328,7 @@
                         <option name="values">
                           <map>
                             <entry key="opacityPercent" value="90" />
-                            <entry key="outputName" value="ic_user" />
+                            <entry key="outputName" value="ic_profile_paciente" />
                             <entry key="sourceFile" value="D:\Compartido_Proyecto" />
                           </map>
                         </option>
