@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Home"
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
         android:icon="@drawable/ic_home_paciente"/>
-    <item android:title="Citas"
-        android:icon="@drawable/ic_home_paciente"/>
-    <item android:title="Ubicacion"
-        android:icon="@drawable/ic_home_paciente"/>
-    <item android:title="Perfil"
-        android:icon="@drawable/ic_home_paciente" />
+    <item
+        android:id="@+id/citasFragment"
+        android:title="Citas"
+        android:icon="@drawable/ic_citas_paciente"/>
+    <item
+        android:id="@+id/ubicacionFragment"
+        android:title="Ubicacion"
+        android:icon="@drawable/ic_ubicacion"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Perfil"
+        android:icon="@drawable/ic_profile_paciente" />
 </menu>

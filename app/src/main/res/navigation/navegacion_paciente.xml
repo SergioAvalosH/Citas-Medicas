@@ -8,21 +8,21 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/citasFragment"
         android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.CitasFragment"
-        android:label="fragment_citas"
+        android:label="Citas"
         tools:layout="@layout/fragment_citas" />
     <fragment
         android:id="@+id/ubicacionFragment"
         android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.UbicacionFragment"
-        android:label="fragment_ubicacion"
+        android:label="Ubicacion"
         tools:layout="@layout/fragment_ubicacion" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="Perfil"
         tools:layout="@layout/fragment_profile" />
 </navigation>
