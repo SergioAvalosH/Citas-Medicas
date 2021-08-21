@@ -8,21 +8,22 @@
     tools:context=".view.ui.fragments.IndiceFragment">
 
     <LinearLayout
-        android:layout_width="270dp"
+        android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_margin="70dp"
-        android:layout_gravity="center_vertical"
-        android:padding="30dp"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/Admin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="18dp"
-            android:layout_weight="1"
-            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="15dp"
+            android:drawableLeft="@drawable/ic_admin"
             android:fontFamily="@font/poppins_semibold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:text="Administrador"
             android:textSize="15dp"
             app:backgroundTint="@color/f_letra" />
@@ -31,9 +32,13 @@
             android:id="@+id/Paciente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="18dp"
-            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="15dp"
+            android:drawableLeft="@drawable/ic_user"
             android:fontFamily="@font/poppins_semibold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:textSize="15dp"
             android:text="Paciente"
             app:backgroundTint="@color/f_letra" />
