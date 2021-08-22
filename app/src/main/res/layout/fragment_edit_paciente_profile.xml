@@ -12,7 +12,7 @@
         android:layout_height="650dp"
         android:layout_margin="70dp"
         android:layout_gravity="center_vertical"
-        android:padding="30dp"
+        android:padding="35dp"
         android:orientation="vertical">
 
         <TextView
