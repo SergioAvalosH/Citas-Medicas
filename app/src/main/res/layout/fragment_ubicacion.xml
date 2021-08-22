@@ -7,5 +7,4 @@
     android:background="@drawable/backgound_gradient"
     tools:context=".view.ui.fragments.pacienteFragments.UbicacionFragment">
 
-
 </FrameLayout>
