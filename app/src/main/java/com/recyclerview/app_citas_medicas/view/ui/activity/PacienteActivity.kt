@@ -17,12 +17,10 @@ class PacienteActivity : AppCompatActivity() {
         // Para la navegacion
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         val navController = findNavController(R.id.fragmentContainerView) // el fragmento de la actividad paciente
-
         // PAra el bar
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment, R.id.citasFragment, R.id.ubicacionFragment, R.id.profileFragment))
         setupActionBarWithNavController(navController,appBarConfiguration)
-
-        bottomNavigationView.setupWithNavController(navController)
+        bottomNavigationView.setupWithNavController(navController) // IControlador de l navegation
 
 
     }
