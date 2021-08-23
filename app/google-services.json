@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:170466684179:android:798d2920c7be6781bc7ee6",
         "android_client_info": {
-          "package_name": "com.example.app_citas"
+          "package_name": "com.recyclerview.app_citas_medicas"
         }
       },
       "oauth_client": [
