@@ -55,7 +55,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/User"
+                android:id="@+id/tvUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -74,7 +74,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/Password"
+                android:id="@+id/tvLPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -89,7 +89,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/IngresarP"
+                    android:id="@+id/tvIngresar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
