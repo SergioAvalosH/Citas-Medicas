@@ -35,11 +35,11 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback {
         val mapFragment = SupportMapFragment.newInstance()
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.ubicacionFragment, mapFragment)
+            .add(R.id.mostrarUbicacion, mapFragment)
             .commit()
 
     }
-
+    // PAra greear el google map
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
         createMarker()
