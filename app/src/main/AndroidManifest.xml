@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Appcitasmedicas">
-        <activity android:name=".Pacientes">
-
-        </activity>
+        <activity android:name=".Pacientes" />
         <activity android:name=".Prueba" />
         <activity android:name=".view.ui.activity.Boton" /> <!-- Para agregar google maps -->
         <meta-data
