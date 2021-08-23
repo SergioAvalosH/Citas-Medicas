@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.recyclerview.app_citas_medicas.R
+import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,6 +23,8 @@ class EditPacienteProfileFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    var displayMessage: String? = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -35,7 +38,12 @@ class EditPacienteProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_edit_paciente_profile, container, false)
+        var view =  inflater.inflate(R.layout.fragment_edit_paciente_profile, container, false)
+
+        displayMessage = arguments?.getString("dni")
+        view.tvDNI.text = displayMessage
+
+        return view
     }
 
     companion object {

@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
+import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
+import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,6 +27,8 @@ class ProfileFragment : Fragment() {
     private var param2: String? = null
 
     val db = Firebase.firestore
+    // Para pasar datos al otro fragment
+    private lateinit var comunicator: Comunicator_Paciente
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +43,15 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
+        comunicator = activity as Comunicator_Paciente
+
+        view.editarDatosPaciente.setOnClickListener{
+            comunicator.passDataFroProfiletoEdite(view.tvDniPaciente.text.toString())
+
+        }
+
+        return view
     }
 
     companion object {

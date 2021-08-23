@@ -58,6 +58,7 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback, Comunicator_Pa
         )
     }
 
+    // Para ser el puente entre fragments para pasar los datos del fragment_profile y fragment_edit_paciente_prodfile
     override fun passDataFroProfiletoEdite(dnitext: String) {
         val bundle = Bundle()
         bundle.putString("dni", dnitext)
