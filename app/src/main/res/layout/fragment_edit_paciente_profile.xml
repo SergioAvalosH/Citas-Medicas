@@ -42,7 +42,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/Name"
+                android:id="@+id/tvName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -61,7 +61,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/Surname"
+                android:id="@+id/tvSurname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -80,7 +80,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/DNI"
+                android:id="@+id/tvDNI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -99,7 +99,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/Password"
+                android:id="@+id/tvPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"

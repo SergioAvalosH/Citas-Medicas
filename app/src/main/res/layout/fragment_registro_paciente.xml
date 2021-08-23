@@ -42,7 +42,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/Name"
+                android:id="@+id/tvPName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -61,7 +61,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/Surname"
+                android:id="@+id/tvPSurname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -80,7 +80,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/DNI"
+                android:id="@+id/tvPDNI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -99,7 +99,7 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/Password"
+                android:id="@+id/tvPPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -107,33 +107,13 @@
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
                 android:inputType="textPassword" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Nueva Contraseña"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <EditText
-                android:id="@+id/CPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:fontFamily="@font/poppins_semibold"
-                android:inputType="textPassword" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/Registrar"
+                    android:id="@+id/tvPRegistrar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
