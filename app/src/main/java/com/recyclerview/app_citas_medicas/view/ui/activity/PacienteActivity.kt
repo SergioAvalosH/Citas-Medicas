@@ -25,7 +25,7 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // Para la navegacion
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        val navController = findNavController(R.id.fragmentContainerView) // el fragmento de la actividad paciente
+        val navController = findNavController(R.id.fragment) // el fragmento de la actividad paciente
         // PAra el bar
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment, R.id.citasFragment, R.id.ubicacionFragment, R.id.profileFragment))
         setupActionBarWithNavController(navController,appBarConfiguration)
