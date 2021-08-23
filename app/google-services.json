@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "170466684179",
+    "project_id": "appcitasmedicas-178ba",
+    "storage_bucket": "appcitasmedicas-178ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170466684179:android:798d2920c7be6781bc7ee6",
+        "android_client_info": {
+          "package_name": "com.example.app_citas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170466684179-i17o9c49nq42n87nbu6n4bfr18l0n1vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8XAVvkQBT9Ojek_f4hsYo7V_uOF_Om3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170466684179-i17o9c49nq42n87nbu6n4bfr18l0n1vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
