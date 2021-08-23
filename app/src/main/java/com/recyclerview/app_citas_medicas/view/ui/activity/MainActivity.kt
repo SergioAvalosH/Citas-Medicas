@@ -3,33 +3,44 @@ package com.recyclerview.app_citas_medicas.view.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import android.widget.EditText
 
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
-import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.*
 import kotlinx.android.synthetic.main.fragment_login_paciente.*
-import kotlinx.android.synthetic.main.fragment_registro_paciente.*
 
 
 class MainActivity : AppCompatActivity() {
     val db = Firebase.firestore
+
+    lateinit var usuario: EditText
+    lateinit var contraseña: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_login_paciente)
-        tvIngresar.setOnClickListener {
+        setContentView(R.layout.activity_paciente)
+        /*tvIngresar.setOnClickListener {
+            usuario =  findViewById(R.id.tvUser)
+            contraseña =  findViewById(R.id.tvLPassword)
+            var user:String = usuario.text.toString()
+            var password:String = contraseña.text.toString()
+            var userbd:String = ""
+            var passwordbd:String = ""
+            db.collection("pacientes").get().addOnSuccessListener { result ->
+                    for (documento in result){
+                        userbd = documento["DNI"].toString()
+                        passwordbd = documento["Contraseña"].toString()
+                    }
+                    if (user == userbd && password == passwordbd){
+                        val intent = Intent( this,PacienteActivity::class.java)
+                        startActivity(intent)
+                    }
 
-
-            if(tvUser.text.toString().equals(db.collection("pacientes").whereEqualTo("DNI", tvUser.text.toString()))
-                && tvLPassword.text.toString().equals( db.collection("pacientes").whereEqualTo("Contraseña", tvLPassword.text.toString()))){
-                tvUser.text.clear()
-                tvLPassword.text.clear()
-            } else {
-                println("error")
+                } .addOnFailureListener{
+                    println("Bastardo")
             }
 
-        }
+        }*/
         /*tvPRegistrar.setOnClickListener{
             db.collection("pacientes").document(tvPDNI.text.toString()).set(
                 hashMapOf(
