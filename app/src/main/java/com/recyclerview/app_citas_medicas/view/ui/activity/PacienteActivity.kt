@@ -14,8 +14,10 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.recyclerview.app_citas_medicas.R
+import com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.EditPacienteProfileFragment
+import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
 
-class PacienteActivity : AppCompatActivity(), OnMapReadyCallback {
+class PacienteActivity : AppCompatActivity(), OnMapReadyCallback, Comunicator_Paciente {
 
     private lateinit var map:GoogleMap
 
@@ -39,7 +41,7 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback {
             .commit()
 
     }
-    // PAra greear el google map
+    // Para greear el google map
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
         createMarker()
@@ -54,5 +56,15 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback {
             null
 
         )
+    }
+
+    override fun passDataFroProfiletoEdite(dnitext: String) {
+        val bundle = Bundle()
+        bundle.putString("dni", dnitext)
+
+        val transacction = this.supportFragmentManager.beginTransaction()
+        val fragmentEditPacienteProfile = EditPacienteProfileFragment()
+        fragmentEditPacienteProfile.arguments= bundle
+
     }
 }
