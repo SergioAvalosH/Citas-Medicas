@@ -7,17 +7,13 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.OnMapReadyCallback
-import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.recyclerview.app_citas_medicas.R
 import com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.EditPacienteProfileFragment
 import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
 import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_profile.*
 
 class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
 
@@ -35,10 +31,18 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
         setupActionBarWithNavController(navController,appBarConfiguration)
         bottomNavigationView.setupWithNavController(navController) // IControlador de l navegation
 
+        // Para ir al mapa
         verUbicacionHospital.setOnClickListener{
             val intent = Intent(this, UbicacionActivity::class.java)
             startActivity(intent)
         }
+
+        // Para crear una nueva cita
+        crearCitaPaciente.setOnClickListener{
+            val intent = Intent(this, CrearCitaActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 
