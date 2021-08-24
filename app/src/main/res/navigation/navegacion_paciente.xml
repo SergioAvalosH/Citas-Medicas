@@ -16,11 +16,6 @@
         android:label="Citas"
         tools:layout="@layout/fragment_citas" />
     <fragment
-        android:id="@+id/ubicacionFragment"
-        android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.UbicacionFragment"
-        android:label="Ubicacion"
-        tools:layout="@layout/fragment_ubicacion" />
-    <fragment
         android:id="@+id/profileFragment"
         android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.ProfileFragment"
         android:label="Perfil"

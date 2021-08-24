@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Appcitasmedicas">
+        <activity android:name=".view.ui.activity.UbicacionActivity"></activity>
         <activity android:name=".view.ui.activity.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +21,8 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" /> <!-- Aqui la lista de  Activities -->
-        <activity android:name=".view.ui.activity.PacienteActivity"></activity>
-        <activity android:name=".view.ui.activity.MainActivity">
-
-        </activity>
+        <activity android:name=".view.ui.activity.PacienteActivity" />
+        <activity android:name=".view.ui.activity.MainActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

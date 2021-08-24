@@ -1,5 +1,6 @@
 package com.recyclerview.app_citas_medicas.view.ui.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
@@ -16,8 +17,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.recyclerview.app_citas_medicas.R
 import com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.EditPacienteProfileFragment
 import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
+import kotlinx.android.synthetic.main.fragment_home.*
 
-class PacienteActivity : AppCompatActivity(), OnMapReadyCallback, Comunicator_Paciente {
+class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
 
     private lateinit var map:GoogleMap
 
@@ -28,35 +30,17 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback, Comunicator_Pa
         // Para la navegacion
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         val navController = findNavController(R.id.fragment) // el fragmento de la actividad paciente
-        // PAra el bar
-        val appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment, R.id.citasFragment, R.id.ubicacionFragment, R.id.profileFragment))
+        // PAra el bar de navegacion
+        val appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment, R.id.citasFragment, R.id.profileFragment))
         setupActionBarWithNavController(navController,appBarConfiguration)
         bottomNavigationView.setupWithNavController(navController) // IControlador de l navegation
 
-        // Para google Map - Agregarlo de forma dinamica
-        val mapFragment = SupportMapFragment.newInstance()
-        supportFragmentManager
-            .beginTransaction()
-            .add(R.id.ubicacionFragment, mapFragment)
-            .commit()
+        verUbicacionHospital.setOnClickListener{
+            val intent = Intent(this, UbicacionActivity::class.java)
+            startActivity(intent)
+        }
+    }
 
-    }
-    // Para greear el google map
-    override fun onMapReady(googleMap: GoogleMap) {
-        map = googleMap
-        createMarker()
-    }
-    private fun createMarker(){
-        val coordinates = LatLng(-9.075513, -78.602313)
-        val marker = MarkerOptions().position(coordinates).title("Hospital la Caleta")
-        map.addMarker(marker)
-        map.animateCamera(
-            CameraUpdateFactory.newLatLngZoom(coordinates,18f),
-            4000,
-            null
-
-        )
-    }
 
     // Para ser el puente entre fragments para pasar los datos del fragment_profile y fragment_edit_paciente_prodfile
     override fun passDataFroProfiletoEdite(dnitext: String) {
@@ -70,6 +54,5 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback, Comunicator_Pa
         transaction.replace(R.id.fragmentPerfilPaciente, fragmentEditPacienteProfile)
         transaction.addToBackStack(null)
         transaction.commit()
-
     }
 }
