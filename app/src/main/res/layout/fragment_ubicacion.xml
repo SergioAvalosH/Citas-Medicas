@@ -6,11 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgound_gradient"
     tools:context=".view.ui.fragments.pacienteFragments.UbicacionFragment">
-    <fragment
-        android:id="@+id/mostrarUbicacionHospital"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+
 
 
 </FrameLayout>

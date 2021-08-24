@@ -1,6 +1,5 @@
 package com.recyclerview.app_citas_medicas.view.ui.activity
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
@@ -38,7 +37,7 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback, Comunicator_Pa
         val mapFragment = SupportMapFragment.newInstance()
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.mostrarUbicacionHospital, mapFragment)
+            .add(R.id.ubicacionFragment, mapFragment)
             .commit()
 
     }
