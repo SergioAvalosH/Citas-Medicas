@@ -14,7 +14,6 @@ import com.recyclerview.app_citas_medicas.R
 import com.recyclerview.app_citas_medicas.view.ui.fragments.AdminMenu
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginAdministradorFragment
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginPaciente
-import kotlinx.android.synthetic.main.fragment_indice.*
 import kotlinx.android.synthetic.main.fragment_login_paciente.*
 import kotlinx.android.synthetic.main.fragment_registro_paciente.*
 
