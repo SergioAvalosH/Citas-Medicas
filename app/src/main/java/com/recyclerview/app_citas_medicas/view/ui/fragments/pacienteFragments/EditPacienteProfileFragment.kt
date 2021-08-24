@@ -5,8 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
+import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.*
 import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.view.*
+import kotlinx.android.synthetic.main.fragment_registro_paciente.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,6 +28,9 @@ class EditPacienteProfileFragment : Fragment() {
     private var param2: String? = null
 
     var displayMessage: String? = ""
+    val db = Firebase.firestore
+    var dni: String? = ""
+    var contrasenia: String? = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +38,22 @@ class EditPacienteProfileFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-
+        UpdatePacienteProfile.setOnClickListener{
+            if(contrasenia == tvPassword.text.toString() ){
+                db.collection("usuarios").document(tvDNI.text.toString()).set(
+                    hashMapOf(
+                        "Nombres" to tvName.text.toString(),
+                        "Apellidos" to tvSurname.text.toString(),
+                        "Contraseña" to  tvPassword.text.toString())
+                )
+            }else{
+                mensajeError.text = "Error, ingrese bien su contraseña"
+                
+                tvName.text.clear()
+                tvSurname.text.clear()
+                tvPassword.text.clear()
+            }
+        }
     }
 
     override fun onCreateView(
@@ -44,7 +66,11 @@ class EditPacienteProfileFragment : Fragment() {
         displayMessage = arguments?.getString("dni")
         view.tvDNI.text = displayMessage
 
-
+        // Lamacenar el dni y el password
+        dni = displayMessage
+        db.collection("usuarios").document(tvDNI.text.toString()).get().addOnSuccessListener {
+            contrasenia = it.get("Contraseña") as String?
+        }
         return view
     }
 

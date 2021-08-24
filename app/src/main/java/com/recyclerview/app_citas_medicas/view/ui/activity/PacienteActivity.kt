@@ -66,8 +66,9 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback, Comunicator_Pa
         val transaction = this.supportFragmentManager.beginTransaction()
         val fragmentEditPacienteProfile = EditPacienteProfileFragment()
         fragmentEditPacienteProfile.arguments= bundle
-
+        // Intercambio de fragments
         transaction.replace(R.id.fragmentPerfilPaciente, fragmentEditPacienteProfile)
+        transaction.addToBackStack(null)
         transaction.commit()
 
     }
