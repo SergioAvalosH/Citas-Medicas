@@ -6,43 +6,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgound_gradient"
-    tools:context=".view.ui.fragments.IndiceFragment">
-
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/tvAAdmin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="15dp"
-            android:drawableLeft="@drawable/ic_admin"
-            android:fontFamily="@font/poppins_semibold"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="Administrador"
-            android:textSize="15dp"
-            app:backgroundTint="@color/f_letra" />
-
-        <Button
-            android:id="@+id/tvPPaciente"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="15dp"
-            android:drawableLeft="@drawable/ic_user"
-            android:fontFamily="@font/poppins_semibold"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:textSize="15dp"
-            android:text="Paciente"
-            app:backgroundTint="@color/f_letra" />
-    </LinearLayout>
-
-</FrameLayout>
+    tools:context=".view.ui.fragments.IndiceFragment"/>
