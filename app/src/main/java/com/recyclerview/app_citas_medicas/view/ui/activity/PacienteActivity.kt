@@ -63,9 +63,12 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback, Comunicator_Pa
         val bundle = Bundle()
         bundle.putString("dni", dnitext)
 
-        val transacction = this.supportFragmentManager.beginTransaction()
+        val transaction = this.supportFragmentManager.beginTransaction()
         val fragmentEditPacienteProfile = EditPacienteProfileFragment()
         fragmentEditPacienteProfile.arguments= bundle
+
+        transaction.replace(R.id.profileFragment, fragmentEditPacienteProfile)
+        transaction.commit()
 
     }
 }
