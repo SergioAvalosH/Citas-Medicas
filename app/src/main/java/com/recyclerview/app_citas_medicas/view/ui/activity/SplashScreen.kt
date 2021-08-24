@@ -16,9 +16,10 @@ class SplashScreen : AppCompatActivity() {
         val animacion1= AnimationUtils.loadAnimation(this,R.anim.anim_splash)
         val animacion2 = AnimationUtils.loadAnimation(this,R.anim.anim_middle)
 
-        /*scImagen.startAnimation(animacion2)*/
 
-        val splashScreenTimeOutput =  3000
+        val splashScreenTimeOutput =  2000
+
+
         val home = Intent(this@SplashScreen,MainActivity::class.java)
 
         Handler().postDelayed({
