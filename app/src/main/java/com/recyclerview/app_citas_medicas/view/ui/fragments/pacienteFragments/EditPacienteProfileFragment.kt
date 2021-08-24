@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.*
 import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.view.*
 import kotlinx.android.synthetic.main.fragment_registro_paciente.*
 
+
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
@@ -32,12 +33,16 @@ class EditPacienteProfileFragment : Fragment() {
     var dni: String? = ""
     var contrasenia: String? = ""
 
+    //val transaction = supportFragmentManager.beginTransaction()
+    //val fragmentEditPacienteProfile = EditPacienteProfileFragment()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+        // actualizar
         UpdatePacienteProfile.setOnClickListener{
             if(contrasenia == tvPassword.text.toString() ){
                 db.collection("usuarios").document(tvDNI.text.toString()).set(
@@ -46,14 +51,21 @@ class EditPacienteProfileFragment : Fragment() {
                         "Apellidos" to tvSurname.text.toString(),
                         "Contraseña" to  tvPassword.text.toString())
                 )
+
             }else{
                 mensajeError.text = "Error, ingrese bien su contraseña"
-                
                 tvName.text.clear()
                 tvSurname.text.clear()
                 tvPassword.text.clear()
             }
         }
+        // ancelar y volver
+        //cancelEditionProfile.setOnClickListener(
+
+            // Intercambio de fragments
+            //transaction.replace( fragmentEditPacienteProfile, R.id.fragmentPerfilPaciente)
+            //transaction.commit()
+        //)
     }
 
     override fun onCreateView(
