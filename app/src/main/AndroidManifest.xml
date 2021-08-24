@@ -20,8 +20,10 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" /> <!-- Aqui la lista de  Activities -->
-        <activity android:name=".view.ui.activity.PacienteActivity" />
+            android:value="@string/google_maps_key" />
+
+        <!-- Aqui la lista de  Activities -->
+        <activity android:name=".view.ui.activity.PacienteActivity"></activity>
         <activity android:name=".view.ui.activity.MainActivity"></activity>
 
         <meta-data
