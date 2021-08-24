@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_indice)
-
+        val button = this.findViewById<Button>(R.id.tvAAdmin)
         tvIngresar.setOnClickListener {
             usuario =  findViewById(R.id.tvUser)
             contraseña =  findViewById(R.id.tvLPassword)
@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
             var password:String = contraseña.text.toString()
             var userbd:String = ""
             var passwordbd:String = ""
+            button.setOnClickListener {
+                Navigation.findNavController(this.findViewById(R.id.fragment_view_indice)).navigate(R.id.action_indiceFragment_to_adminMenu)
+            }
             db.collection("pacientes").get().addOnSuccessListener { result ->
                     for (documento in result){
                         userbd = documento["DNI"].toString()

@@ -2,8 +2,6 @@
   <library name="Gradle: androidx.dynamicanimation:dynamicanimation:1.0.0@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/69e6da049d51365ed4ca4e70c5f22391/dynamicanimation-1.0.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/15e09fa5fa23ff634b9a10f52fe1fca8/transformed/dynamicanimation-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/15e09fa5fa23ff634b9a10f52fe1fca8/transformed/dynamicanimation-1.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/15e09fa5fa23ff634b9a10f52fe1fca8/transformed/dynamicanimation-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3d5baea08dc381e723c0d16067a9c8e1/transformed/dynamicanimation-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8487e60e795fa7f0c618d0cbeda36032/transformed/dynamicanimation-1.0.0/res" />

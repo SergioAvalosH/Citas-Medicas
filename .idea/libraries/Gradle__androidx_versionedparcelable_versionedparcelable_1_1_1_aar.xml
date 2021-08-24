@@ -2,9 +2,7 @@
   <library name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.1@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/132f5120be15f1c7f9774da0912f9ee2/versionedparcelable-1.1.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6ceae79df60ac7be0c0851c935969ec5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6ceae79df60ac7be0c0851c935969ec5/transformed/versionedparcelable-1.1.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6ceae79df60ac7be0c0851c935969ec5/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/19f74bb378f61a0d355db138ae1801c2/transformed/versionedparcelable-1.1.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/834172c29e3fc37924f7d2d7c7e0c4a9/transformed/versionedparcelable-1.1.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6393ee6a3c9492f2e5cde7e6d2d077f2/transformed/versionedparcelable-1.1.1/res" />

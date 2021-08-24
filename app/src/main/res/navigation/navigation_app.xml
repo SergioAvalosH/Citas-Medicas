@@ -21,5 +21,14 @@
         android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.GestionPerfiles"
         android:label="fragment_gestion_perfiles"
         tools:layout="@layout/fragment_gestion_perfiles" />
+    <fragment
+        android:id="@+id/indiceFragment"
+        android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.IndiceFragment"
+        android:label="fragment_indice"
+        tools:layout="@layout/fragment_indice" >
+        <action
+            android:id="@+id/action_indiceFragment_to_adminMenu"
+            app:destination="@id/adminMenu" />
+    </fragment>
 
 </navigation>
