@@ -3,11 +3,14 @@ package com.recyclerview.app_citas_medicas.view.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
-
+import androidx.navigation.Navigation
+import android.view.View
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
+import kotlinx.android.synthetic.main.fragment_indice.*
 import kotlinx.android.synthetic.main.fragment_login_paciente.*
 
 
@@ -18,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var contraseña: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_login_paciente)
+        setContentView(R.layout.fragment_indice)
 
         tvIngresar.setOnClickListener {
             usuario =  findViewById(R.id.tvUser)
