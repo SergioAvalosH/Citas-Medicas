@@ -82,6 +82,8 @@ class EditPacienteProfileFragment : Fragment() {
         dni = displayMessage
         db.collection("usuarios").document(tvDNI.text.toString()).get().addOnSuccessListener {
             contrasenia = it.get("Contraseña") as String?
+            view.tvName.setText(it.get("Nombres") as String?)
+            view.tvSurname.setText(it.get("Apellidos") as String?)
         }
         return view
     }
