@@ -36,8 +36,6 @@ class EditPacienteProfileFragment : Fragment() {
     var dni: String? = ""
     var contrasenia: String? = ""
 
-    //val transaction = supportFragmentManager.beginTransaction()
-    //val fragmentEditPacienteProfile = EditPacienteProfileFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,14 +43,6 @@ class EditPacienteProfileFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-
-        // ancelar y volver
-        //cancelEditionProfile.setOnClickListener(
-
-            // Intercambio de fragments
-            //transaction.replace( fragmentEditPacienteProfile, R.id.fragmentPerfilPaciente)
-            //transaction.commit()
-        //)
     }
 
     override fun onCreateView(

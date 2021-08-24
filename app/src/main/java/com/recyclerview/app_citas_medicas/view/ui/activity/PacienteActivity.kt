@@ -3,6 +3,7 @@ package com.recyclerview.app_citas_medicas.view.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -14,6 +15,7 @@ import com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.Ed
 import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_profile.*
+import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
 
@@ -43,6 +45,10 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
             startActivity(intent)
         }
 
+        // Mensaje
+        editarContraseñaPaciente.setOnClickListener{
+            Toast.makeText(this, "¿Por que me toca, gay?", Toast.LENGTH_SHORT).show()
+        }
     }
 
 
