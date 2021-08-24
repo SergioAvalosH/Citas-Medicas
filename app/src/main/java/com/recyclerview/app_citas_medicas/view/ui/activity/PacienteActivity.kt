@@ -37,7 +37,7 @@ class PacienteActivity : AppCompatActivity(), OnMapReadyCallback, Comunicator_Pa
         val mapFragment = SupportMapFragment.newInstance()
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.qwerty, mapFragment)
+            .add(R.id.ubicacionFragment, mapFragment)
             .commit()
 
     }

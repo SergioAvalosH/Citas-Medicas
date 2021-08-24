@@ -31,6 +31,7 @@ class EditPacienteProfileFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
     }
 
     override fun onCreateView(
@@ -42,6 +43,7 @@ class EditPacienteProfileFragment : Fragment() {
 
         displayMessage = arguments?.getString("dni")
         view.tvDNI.text = displayMessage
+
 
         return view
     }
