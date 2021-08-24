@@ -18,8 +18,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var contraseña: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_paciente)
-        /*tvIngresar.setOnClickListener {
+        setContentView(R.layout.fragment_login_paciente)
+
+        tvIngresar.setOnClickListener {
             usuario =  findViewById(R.id.tvUser)
             contraseña =  findViewById(R.id.tvLPassword)
             var user:String = usuario.text.toString()
@@ -37,10 +38,10 @@ class MainActivity : AppCompatActivity() {
                     }
 
                 } .addOnFailureListener{
-                    println("Bastardo")
+
             }
 
-        }*/
+        }
         /*tvPRegistrar.setOnClickListener{
             db.collection("pacientes").document(tvPDNI.text.toString()).set(
                 hashMapOf(

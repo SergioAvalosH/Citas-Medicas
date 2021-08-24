@@ -9,23 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Appcitasmedicas">
-        <activity android:name=".Pacientes" />
-        <activity android:name=".Prueba" />
-        <activity android:name=".view.ui.activity.Boton" /> <!-- Para agregar google maps -->
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" /> <!-- Aqui la lista de  Activities -->
         <activity android:name=".view.ui.activity.PacienteActivity">
+
+        </activity>
+
+        <activity android:name=".view.ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".admin_menu" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".view.ui.activity.MainActivity">
-
         </activity>
 
         <meta-data
