@@ -37,20 +37,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="392" />
-                            <option name="y" value="93" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="ubicacionFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="230" />
-                            <option name="y" value="93" />
+                            <option name="x" value="242" />
+                            <option name="y" value="91" />
                           </Point>
                         </option>
                       </LayoutPositions>
