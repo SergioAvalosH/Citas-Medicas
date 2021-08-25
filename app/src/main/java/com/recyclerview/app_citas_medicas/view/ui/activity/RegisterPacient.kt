@@ -3,6 +3,7 @@ package com.recyclerview.app_citas_medicas.view.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
@@ -14,19 +15,28 @@ class RegisterPacient : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_pacient)
         tvPRegistrar.setOnClickListener{
-            db.collection("usuarios").document(tvPDNI.text.toString()).set(
-                hashMapOf(
-                    "DNI" to tvPDNI.text.toString(),
-                    "Nombres" to tvPName.text.toString(),
-                    "Apellidos" to tvPSurname.text.toString(),
-                    "Contraseña" to  tvPPassword.text.toString(),
-                    "Tipo" to "Paciente"
+            if(tvPDNI.text.toString() != "" && tvPName.text.toString() != "" && tvPSurname.text.toString() != "" && tvPPassword.text.toString() != ""){
+                db.collection("usuarios").document(tvPDNI.text.toString()).set(
+                    hashMapOf(
+                        "DNI" to tvPDNI.text.toString(),
+                        "Nombres" to tvPName.text.toString(),
+                        "Apellidos" to tvPSurname.text.toString(),
+                        "Contraseña" to  tvPPassword.text.toString(),
+                        "Tipo" to "Paciente"
+                    )
                 )
-            )
-            tvPDNI.text.clear()
-            tvPName.text.clear()
-            tvPSurname.text.clear()
-            tvPPassword.text.clear()
+                tvPDNI.text.clear()
+                tvPName.text.clear()
+                tvPSurname.text.clear()
+                tvPPassword.text.clear()
+            } else {
+                Toast.makeText(this, "Llene todo los campos correctamente", Toast.LENGTH_SHORT).show()
+                tvPDNI.text.clear()
+                tvPName.text.clear()
+                tvPSurname.text.clear()
+                tvPPassword.text.clear()
+            }
+
 
         }
         tvVolver.setOnClickListener {

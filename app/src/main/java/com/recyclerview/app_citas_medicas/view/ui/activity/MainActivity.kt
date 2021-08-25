@@ -14,6 +14,7 @@ import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginAdministradorFragment
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginPaciente
+import kotlinx.android.synthetic.main.activity_register_pacient.*
 import kotlinx.android.synthetic.main.fragment_login_paciente.*
 
 
@@ -45,14 +46,26 @@ class MainActivity : AppCompatActivity() {
                         val intent = Intent(this, PacienteActivity::class.java)
                         intent.putExtra("dni",userbd)
                         startActivity(intent)
+                        tvPDNI.text.clear()
+                        tvPName.text.clear()
+                        tvPSurname.text.clear()
+                        tvPPassword.text.clear()
                     } else {
                         if (tipobd == tipoadmin) {
                             val intent = Intent(this, AdminMenu::class.java)
                             startActivity(intent)
+                            tvPDNI.text.clear()
+                            tvPName.text.clear()
+                            tvPSurname.text.clear()
+                            tvPPassword.text.clear()
                         }
                     }
                 } else {
                     Toast.makeText(this, "Usuario o Contraseña erronea", Toast.LENGTH_SHORT).show()
+                    tvPDNI.text.clear()
+                    tvPName.text.clear()
+                    tvPSurname.text.clear()
+                    tvPPassword.text.clear()
                 }
             }
         }

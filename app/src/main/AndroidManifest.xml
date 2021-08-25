@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Appcitasmedicas">
+        <activity android:name=".ElecLogeo"></activity>
         <activity
             android:name=".view.ui.activity.EditProfileManager"
             android:exported="true" />
