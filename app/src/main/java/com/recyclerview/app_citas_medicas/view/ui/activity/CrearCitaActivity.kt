@@ -15,6 +15,7 @@ class CrearCitaActivity : AppCompatActivity() {
 
     val db = Firebase.firestore
     var datalista=ArrayList<String>()
+    var medico=""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,10 +30,17 @@ class CrearCitaActivity : AppCompatActivity() {
                 for(document in querySnapshot!!){
                     var cadena=" ${document.getString("Nombre")}"
                     datalista.add(cadena)
+                    medico="${document.getString("Medico")}"
+
                 }
                 EspSpinner.adapter=ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,datalista)
-                }
-        }
+                textViewMedico.text=medico
+            }
+
+
+
+
+}
 
     private fun mensaje(s: String) {
         AlertDialog.Builder(this).setTitle("Atencion")

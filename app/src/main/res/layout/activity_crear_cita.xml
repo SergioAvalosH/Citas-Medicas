@@ -27,31 +27,37 @@
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="15sp"
                 android:layout_marginBottom="30dp"
-                android:text="Ingrese una nueva Cita" />
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:fontFamily="@font/poppins_semibold"
-                android:textSize="20dp"
-                android:text="DNI" />
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:fontFamily="@font/poppins_light"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:text="87654321" />
+                android:text="Especialidad" />
+
 
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/EspSpinner"/>
+                android:id="@+id/EspSpinner" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="30dp"
+                android:text="Medico" />
+
+            <TextView
+                android:id="@+id/textViewMedico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="30dp"
+                android:text="Luis" />
+
 
             <Button
                 android:id="@+id/bntGuardarCita"
