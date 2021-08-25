@@ -21,6 +21,7 @@ class UbicacionActivity : AppCompatActivity(), OnMapReadyCallback {
         val actionBar = supportActionBar
         actionBar!!.title = "Ubicacion Hospital"
         actionBar.setDisplayHomeAsUpEnabled(true)
+        createFragment()
     }
     private fun createFragment(){
         val mapFragment: SupportMapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
@@ -36,7 +37,7 @@ class UbicacionActivity : AppCompatActivity(), OnMapReadyCallback {
         val marker: MarkerOptions= MarkerOptions().position(coordinates).title("Hospital la Caleta")
         map.addMarker(marker)
         map.animateCamera(
-            CameraUpdateFactory.newLatLngZoom(coordinates, 10f),
+            CameraUpdateFactory.newLatLngZoom(coordinates, 18f),
             2000,
             null
         )
