@@ -41,50 +41,52 @@
                 android:gravity="center"
                 android:layout_margin="20dp"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="313dp"
             android:orientation="vertical"
             android:padding="20dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Usuario"
                 android:maxLength="8"
+                android:text="Usuario"
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/tvUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:maxLength="20"
-                android:textStyle="bold"
-                android:textColor="@color/white"
                 android:fontFamily="@font/poppins_semibold"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:maxLength="20"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
-                android:textColor="@color/white"
                 android:text="Contraseña"
-                android:textSize="15sp" />
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/tvLPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:textStyle="bold"
-                android:textColor="@color/white"
                 android:fontFamily="@font/poppins_semibold"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -98,24 +100,24 @@
                     android:layout_gravity="center"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
-                    android:textStyle="bold"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Ingresar"
+                    android:textStyle="bold"
                     app:backgroundTint="@color/f_letra"
-                    app:elevation="5dp"  />
+                    app:elevation="5dp" />
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/linkRegister"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="¿No esta registrado?"
-                android:textStyle="bold"
+                android:layout_height="36dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:textSize="12dp"
+                android:gravity="center"
+                android:text="¿No esta registrado?"
                 android:textColor="@color/white"
-                android:gravity="center" />
+                android:textSize="12dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
