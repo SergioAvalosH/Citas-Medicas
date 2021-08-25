@@ -33,6 +33,7 @@
         </ImageView>
 
         <TextView
+            android:id="@+id/mensajeBienvenida"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -47,6 +48,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <Button
+                android:id="@+id/crearCitaPaciente"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_margin="10dp"

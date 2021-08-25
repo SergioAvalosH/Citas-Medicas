@@ -17,6 +17,10 @@ class UbicacionActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ubicacion)
 
+        // Par el action Bar
+        val actionBar = supportActionBar
+        actionBar!!.title = "Ubicacion Hospital"
+        actionBar.setDisplayHomeAsUpEnabled(true)
     }
     private fun createFragment(){
         val mapFragment: SupportMapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment

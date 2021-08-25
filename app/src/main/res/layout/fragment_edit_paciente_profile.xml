@@ -22,7 +22,6 @@
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
             android:text="Edicion de datos del perfil"
-
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -132,6 +131,7 @@
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Actualizar"/>
+                <!--
                 <Button
                     android:id="@+id/cancelEditionProfile"
                     android:layout_width="wrap_content"
@@ -142,7 +142,17 @@
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Cancelar"
                     app:backgroundTint="#9F2E2E"/>
-
+                 -->
+                <TextView
+                    android:id="@+id/tvConfUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#0BE314"
+                    android:textSize="15sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

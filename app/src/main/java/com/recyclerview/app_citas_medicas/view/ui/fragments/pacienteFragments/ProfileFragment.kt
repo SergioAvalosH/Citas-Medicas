@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
+import com.recyclerview.app_citas_medicas.view.ui.activity.PacienteActivity
 import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
 import kotlinx.android.synthetic.main.fragment_profile.view.*
 

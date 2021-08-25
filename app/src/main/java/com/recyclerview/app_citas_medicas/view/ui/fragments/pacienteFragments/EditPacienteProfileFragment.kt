@@ -1,15 +1,18 @@
 package com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments
 
+import android.app.ProgressDialog.show
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
 import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.*
 import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.view.*
+
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -32,8 +35,6 @@ class EditPacienteProfileFragment : Fragment() {
     var dni: String? = ""
     var contrasenia: String? = ""
 
-    //val transaction = supportFragmentManager.beginTransaction()
-    //val fragmentEditPacienteProfile = EditPacienteProfileFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,30 +42,6 @@ class EditPacienteProfileFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-        // actualizar
-        UpdatePacienteProfile.setOnClickListener{
-            if(contrasenia == tvPassword.text.toString() ){
-                db.collection("usuarios").document(tvDNI.text.toString()).set(
-                    hashMapOf(
-                        "Nombres" to tvName.text.toString(),
-                        "Apellidos" to tvSurname.text.toString(),
-                        "Contraseña" to  tvPassword.text.toString())
-                )
-
-            }else{
-                mensajeError.text = "Error, ingrese bien su contraseña"
-                tvName.text.clear()
-                tvSurname.text.clear()
-                tvPassword.text.clear()
-            }
-        }
-        // ancelar y volver
-        //cancelEditionProfile.setOnClickListener(
-
-            // Intercambio de fragments
-            //transaction.replace( fragmentEditPacienteProfile, R.id.fragmentPerfilPaciente)
-            //transaction.commit()
-        //)
     }
 
     override fun onCreateView(
@@ -81,7 +58,31 @@ class EditPacienteProfileFragment : Fragment() {
         dni = displayMessage
         db.collection("usuarios").document(tvDNI.text.toString()).get().addOnSuccessListener {
             contrasenia = it.get("Contraseña") as String?
+            view.tvName.setText(it.get("Nombres") as String?)
+            view.tvSurname.setText(it.get("Apellidos") as String?)
         }
+
+        // actualizar
+        UpdatePacienteProfile.setOnClickListener{
+            var mensaje: String? = ""
+            if(contrasenia == tvPassword.text.toString() ){
+                db.collection("usuarios").document(tvDNI.text.toString()).set(
+                    hashMapOf(
+                        "Nombres" to tvName.text.toString(),
+                        "Apellidos" to tvSurname.text.toString(),
+                        "Contraseña" to  tvPassword.text.toString())
+                )
+                mensaje = "¡Actualizado!"
+            }else{
+                mensajeError.text = "Error, ingrese bien su contraseña"
+                tvName.text.clear()
+                tvSurname.text.clear()
+                tvPassword.text.clear()
+                mensaje = "¡Sin Actualizar!"
+            }
+            tvConfUpdate.text = mensaje
+        }
+
         return view
     }
 
