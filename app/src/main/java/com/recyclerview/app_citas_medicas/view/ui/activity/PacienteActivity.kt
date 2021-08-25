@@ -70,7 +70,6 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente, Comunicador_
         fragmentEditPacienteProfile.arguments= bundle
         // Intercambio de fragments
         transaction.replace(R.id.fragmentPerfilPaciente, fragmentEditPacienteProfile)
-        transaction.addToBackStack(null)
         transaction.commit()
     }
 

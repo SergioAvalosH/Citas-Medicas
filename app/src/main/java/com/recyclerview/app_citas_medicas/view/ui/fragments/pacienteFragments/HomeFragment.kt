@@ -7,10 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.recyclerview.app_citas_medicas.R
 import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicador_Act_Frag
-import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
-import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

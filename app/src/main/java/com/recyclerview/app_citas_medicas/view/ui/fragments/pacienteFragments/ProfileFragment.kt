@@ -5,13 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
-import com.recyclerview.app_citas_medicas.view.ui.activity.PacienteActivity
 import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
-import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.view.*
 import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -28,7 +25,7 @@ class ProfileFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    var displayMessage: String? = ""
+    private var displayMessage: String? = ""
 
     val db = Firebase.firestore
     // Para pasar datos al otro fragment
@@ -48,9 +45,9 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
+
         displayMessage = arguments?.getString("dni")
         view.tvDniPaciente.text = displayMessage
-
 
         // PAra enviar Dni al para editar
         comunicator = activity as Comunicator_Paciente
@@ -58,11 +55,15 @@ class ProfileFragment : Fragment() {
         view.editarDatosPaciente.setOnClickListener{
             comunicator.passDataFroProfiletoEdite(view.tvDniPaciente.text.toString())
         }
-        db.collection("usuarios").document(view.tvDniPaciente.text.toString()).get().addOnSuccessListener {
-            view.tvNombresPaciente.text = it.get("Nombres" )as String?
-            view.tvApellidosPaciente.text = it.get("Apellidos" )as String?
-        }
 
+        var nombres: String = ""
+        var apellidos: String = ""
+        db.collection("usuarios").document(view.tvDniPaciente.text.toString()).get().addOnSuccessListener {
+            nombres = it.get("Nombres").toString()
+            apellidos = it.get("Apellidos").toString()
+        }
+        view.tvNombresPaciente.text = nombres
+        view.tvApellidosPaciente.text = apellidos
         return view
     }
 
