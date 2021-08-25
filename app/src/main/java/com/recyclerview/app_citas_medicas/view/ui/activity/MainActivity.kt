@@ -69,6 +69,10 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this, "No ingreso ningun dato", Toast.LENGTH_SHORT).show()
             }
         }
+        tvRegresar.setOnClickListener{
+            val intent = Intent(this, ElecLogeo::class.java)
+            startActivity(intent)
+        }
         linkRegister.setOnClickListener{
             val intent = Intent(this, RegisterPacient::class.java)
             startActivity(intent)

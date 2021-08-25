@@ -8,9 +8,9 @@
     tools:context=".view.ui.activity.LoginAdmin">
 
     <LinearLayout
-        android:layout_width="278dp"
+        android:layout_width="350dp"
         android:layout_height="397dp"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="center"
         android:layout_margin="70dp"
         android:orientation="vertical"
         android:padding="30dp"
@@ -32,8 +32,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -73,27 +74,43 @@
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
-            <LinearLayout
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/IngresarA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Ingresar"
+                app:cornerRadius="20dp"
+                android:layout_margin="2dp"
 
-                <Button
-                    android:id="@+id/IngresarA"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="20dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Ingresar"
-                    app:cornerRadius="20dp"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    app:backgroundTint="#5E71E3"
-                    app:elevation="5dp" />
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:backgroundTint="#5E71E3"
+                app:elevation="5dp" />
+            <Button
+                android:id="@+id/tvRegresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Menu"
+                app:cornerRadius="20dp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/f_letra"
+                app:elevation="5dp" />
 
-            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
