@@ -52,13 +52,13 @@ class MainActivity : AppCompatActivity() {
                         tvPPassword.text.clear()
                     } else {
                         if (tipobd == tipoadmin) {
-                            Toast.makeText(this, "Es un administridor No tiene acceso", Toast.LENGTH_SHORT).show()
-                            /*val intent = Intent(this, AdminMenu::class.java)
+                            Toast.makeText(this, "Es un administridor", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this, AdminMenu::class.java)
                             startActivity(intent)
                             tvPDNI.text.clear()
                             tvPName.text.clear()
                             tvPSurname.text.clear()
-                            tvPPassword.text.clear()*/
+                            tvPPassword.text.clear()
                         }
                     }
                 } else {
