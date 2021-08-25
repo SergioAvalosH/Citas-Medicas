@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Appcitasmedicas">
+        <activity android:name=".LoginAdmin"></activity>
         <activity
             android:name=".view.ui.activity.PerfilPacienteActivity"
-            android:parentActivityName=".view.ui.activity.PacienteActivity" >
-        </activity>
+            android:parentActivityName=".view.ui.activity.PacienteActivity"></activity>
         <activity android:name=".view.ui.activity.ElecLogeo" />
         <activity
             android:name=".view.ui.activity.EditProfileManager"
@@ -37,9 +37,10 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" /> <!-- Aqui la lista de  Activities -->
-        <activity android:name=".view.ui.activity.PacienteActivity" />
-        <activity android:name=".view.ui.activity.MainActivity" />
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".view.ui.activity.PacienteActivity"></activity>
+        <activity android:name=".view.ui.activity.MainActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

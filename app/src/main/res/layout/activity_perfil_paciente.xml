@@ -11,138 +11,145 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="50dp"
+        android:orientation="vertical"
         android:padding="70dp"
-        android:orientation="vertical">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/UserAvatar"
-            android:layout_width="266dp"
-            android:layout_height="188dp"
-            android:background="@drawable/ic_profile_paciente" />
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            tools:src="@drawable/ic_profile_paciente" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:text="Datos del Perfil"
-            android:textStyle="bold"
+            android:layout_margin="25dp"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
+            android:text="TextView"
             android:textColor="@color/white"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:text="Datos del Perfil" />
 
         <LinearLayout
             android:id="@+id/seccionNombres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="18dp">
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Nombres"
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvNombresPaciente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Aldair Leonardo"
-                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_light"
                 android:gravity="center"
-                android:fontFamily="@font/poppins_light"/>
+                android:text="Aldair Leonardo"
+                android:textColor="@color/white" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/seccionApellidos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="18dp">
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Apellidos"
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvApellidosPaciente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Diaz Lopez"
-                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_light"
                 android:gravity="center"
-                android:fontFamily="@font/poppins_light"/>
+                android:text="Diaz Lopez"
+                android:textColor="@color/white" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/seccionDNI"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="30dp">
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="DNI"
                 android:textColor="@color/white"
-                android:textSize="15sp"  />
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvDniPaciente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="87654321"
-                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_light"
                 android:gravity="center"
-                android:fontFamily="@font/poppins_light"/>
+                android:text="87654321"
+                android:textColor="@color/white" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/seccionPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="15dp">
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/editarDatosPaciente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
                 android:text="Editar Perfil"
-                android:textStyle="bold"
-                android:fontFamily="@font/poppins_semibold"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/editarContraseñaPaciente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
                 android:text="Cambiar Contraseña"
                 android:textStyle="bold"
-                android:fontFamily="@font/poppins_semibold"
-                app:backgroundTint="@color/f_letra"/>
+                app:backgroundTint="@color/f_letra" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

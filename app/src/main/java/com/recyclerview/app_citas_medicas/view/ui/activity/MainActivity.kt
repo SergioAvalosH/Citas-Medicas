@@ -36,38 +36,38 @@ class MainActivity : AppCompatActivity() {
             var userbd: String = ""
             var passwordbd: String = ""
             var tipobd: String = ""
-
-            db.collection("usuarios").document(user).get().addOnSuccessListener {
+            if(user != "" && password != ""){
+                db.collection("usuarios").document(user).get().addOnSuccessListener {
                     userbd = it.get("DNI").toString()
                     passwordbd = it.get("Contraseña").toString()
                     tipobd = it.get("Tipo").toString()
-                if (user == userbd && password == passwordbd) {
-                    if (tipobd == tipopaciente) {
-                        val intent = Intent(this, PacienteActivity::class.java)
-                        intent.putExtra("dni",userbd)
-                        startActivity(intent)
+
+                    if (user == userbd && password == passwordbd) {
+                        if (tipobd == tipopaciente) {
+                            val intent = Intent(this, PacienteActivity::class.java)
+                            intent.putExtra("dni",userbd)
+                            startActivity(intent)
+                        } else {
+                            if (tipobd == tipoadmin) {
+                                Toast.makeText(this, "Es un administrador !!!!! ", Toast.LENGTH_SHORT).show()
+                                /*val intent = Intent(this, AdminMenu::class.java)
+                                startActivity(intent)
+                                tvPDNI.text.clear()
+                                tvPName.text.clear()
+                                tvPSurname.text.clear()
+                                tvPPassword.text.clear()*/
+                            }
+                        }
+                    } else {
+                        Toast.makeText(this, "Usuario o Contraseña erronea", Toast.LENGTH_SHORT).show()
                         tvPDNI.text.clear()
                         tvPName.text.clear()
                         tvPSurname.text.clear()
                         tvPPassword.text.clear()
-                    } else {
-                        if (tipobd == tipoadmin) {
-                            Toast.makeText(this, "Es un administridor", Toast.LENGTH_SHORT).show()
-                            val intent = Intent(this, AdminMenu::class.java)
-                            startActivity(intent)
-                            tvPDNI.text.clear()
-                            tvPName.text.clear()
-                            tvPSurname.text.clear()
-                            tvPPassword.text.clear()
-                        }
                     }
-                } else {
-                    Toast.makeText(this, "Usuario o Contraseña erronea", Toast.LENGTH_SHORT).show()
-                    tvPDNI.text.clear()
-                    tvPName.text.clear()
-                    tvPSurname.text.clear()
-                    tvPPassword.text.clear()
                 }
+            } else {
+                    Toast.makeText(this, "No ingreso ningun dato", Toast.LENGTH_SHORT).show()
             }
         }
         linkRegister.setOnClickListener{

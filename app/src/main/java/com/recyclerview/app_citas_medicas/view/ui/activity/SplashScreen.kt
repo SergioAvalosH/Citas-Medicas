@@ -20,7 +20,7 @@ class SplashScreen : AppCompatActivity() {
         val splashScreenTimeOutput =  2000
 
 
-        val home = Intent(this@SplashScreen, MainActivity::class.java)
+        val home = Intent(this@SplashScreen, ElecLogeo::class.java)
 
         Handler().postDelayed({
             startActivity(home)
