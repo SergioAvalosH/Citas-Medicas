@@ -18,4 +18,8 @@
     <string name="lbl_btn_save_changes">Guardar Cambios</string>
 
     <!--String par ala ventan-->
+    <string name="nombreempresa">Hospital la Caleta - Chimbote</string>
+    <string name="aboutempresa">Centro hospitalario público de Segundo Nivel II-2 que ofrece servicios especializados en salud, administrado por el Gobierno Regional</string>
+    <string name="horaatencionempresa">Abierto las 24 horas</string>
+    <string name="telefonoempresa">(043) 322281</string>
 </resources>

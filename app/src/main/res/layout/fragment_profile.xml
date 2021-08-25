@@ -18,16 +18,15 @@
         <ImageView
             android:id="@+id/empresaimg"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
-            tools:src="@drawable/icon_user_logo" />
+            android:layout_height="wrap_content"
+            tools:src="@drawable/centrosalud" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             tools:text="Datos de Empresa"
-            android:layout_margin="25dp"
+            android:layout_margin="20dp"
             android:textStyle="bold"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
@@ -46,7 +45,7 @@
                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Sobre nosotros"
+                android:text="Nombre"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -55,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Aldair Leonardo"
+                android:text="@string/nombreempresa"
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:fontFamily="@font/poppins_light"/>
@@ -84,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Diaz Lopez"
+                android:text="@string/aboutempresa"
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:fontFamily="@font/poppins_light"/>
@@ -104,16 +103,25 @@
                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="DNI"
+                android:text="Contacto"
                 android:textColor="@color/white"
                 android:textSize="15sp"  />
 
             <TextView
-                android:id="@+id/seccionOtros"
+                android:id="@+id/seccionhoraatencion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="87654321"
+                android:text="@string/horaatencionempresa"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_light"/>
+            <TextView
+                android:id="@+id/seccionTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/telefonoempresa"
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:fontFamily="@font/poppins_light"/>
