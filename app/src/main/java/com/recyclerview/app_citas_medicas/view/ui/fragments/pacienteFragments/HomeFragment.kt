@@ -6,6 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.recyclerview.app_citas_medicas.R
+import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicador_Act_Frag
+import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
+import kotlinx.android.synthetic.main.fragment_home.view.*
+
+import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +26,7 @@ class HomeFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var comunicator: Comunicador_Act_Frag
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +41,10 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val view =  inflater.inflate(R.layout.fragment_home, container, false)
+        comunicator = activity as Comunicador_Act_Frag
+        comunicator.comunicadorActivityMai_ProfileFragment(view.mensajeBienvenidaDNI.text.toString())
+        return view
     }
 
     companion object {
@@ -57,4 +66,5 @@ class HomeFragment : Fragment() {
                 }
             }
     }
+
 }

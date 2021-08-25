@@ -15,13 +15,15 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
 import com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.EditPacienteProfileFragment
+import com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.ProfileFragment
+import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicador_Act_Frag
 import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
 import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.view.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_profile.view.*
 
-class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
+class PacienteActivity : AppCompatActivity(), Comunicator_Paciente, Comunicador_Act_Frag {
 
     private lateinit var map:GoogleMap
     private val db = Firebase.firestore
@@ -52,8 +54,8 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
 
         val dni: String? = intent.getStringExtra("dni")
 
-        mensajeBienvenida.text= "Bienvenido"
 
+        mensajeBienvenidaDNI.text= dni
 
     }
 
@@ -70,5 +72,14 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
         transaction.replace(R.id.fragmentPerfilPaciente, fragmentEditPacienteProfile)
         transaction.addToBackStack(null)
         transaction.commit()
+    }
+
+    override fun comunicadorActivityMai_ProfileFragment(dniPac: String) {
+        val bundle = Bundle()
+        bundle.putString("dni", dniPac)
+
+        val fragmentPacienteProfile = ProfileFragment()
+        fragmentPacienteProfile.arguments= bundle
+        // Intercambio de fragments
     }
 }

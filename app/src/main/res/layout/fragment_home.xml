@@ -42,6 +42,13 @@
             android:text="Bienvenido"
             android:textColor="#fff"
             android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/mensajeBienvenidaDNI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textSize="1dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
