@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
                 if (user == userbd && password == passwordbd) {
                     if (tipobd == tipopaciente) {
                         val intent = Intent(this, PacienteActivity::class.java)
-                        intent.putExtra("dni", userbd)
                         startActivity(intent)
                     } else {
                         if (tipobd == tipoadmin) {
@@ -51,6 +50,7 @@ class MainActivity : AppCompatActivity() {
                             val manager = supportFragmentManager
                             val transaction= manager.beginTransaction()
                             transaction.replace(R.id.login_paciente,fragments)
+                            transaction.addToBackStack(null)
                             transaction.commit()
                         }
                     }
