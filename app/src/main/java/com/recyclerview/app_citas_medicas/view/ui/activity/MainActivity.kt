@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.navigation.Navigation
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -50,6 +51,8 @@ class MainActivity : AppCompatActivity() {
                             startActivity(intent)
                         }
                     }
+                } else {
+                    Toast.makeText(this, "Usuario o Contraseña erronea", Toast.LENGTH_SHORT).show()
                 }
             }
         }
