@@ -21,7 +21,7 @@
             android:gravity="center_horizontal"
             android:fontFamily="@font/poppins_semibold"
             android:textColor="#fff"
-            android:text="CLINICA LOS SUGARS DE SERGIO Y FERNANDO" />
+            android:text="Hospital la Caleta de Chimbote" />
 
         <ImageView
             android:layout_width="264dp"
@@ -79,7 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_margin="10dp"
-                android:text="Ver Ubicacion"
+                android:text="Ver Perfil"
                 android:fontFamily="@font/poppins_semibold"
                 app:backgroundTint="@color/f_letra"
                 app:cornerRadius="20dp"/>

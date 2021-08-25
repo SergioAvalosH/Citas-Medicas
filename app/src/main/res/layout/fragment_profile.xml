@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            tools:text="Datos del Perfil"
+            tools:text="Datos de Empresa"
             android:layout_margin="25dp"
             android:textStyle="bold"
             android:fontFamily="@font/poppins_semibold"
@@ -35,25 +35,23 @@
             android:textSize="25dp"/>
 
         <LinearLayout
-            android:id="@+id/seccionNombres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginBottom="18dp">
 
             <TextView
-                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Nombres"
+                android:text="Sobre nosotros"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvNombresPaciente"
+                android:id="@+id/seccionNombreEmpresa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -77,12 +75,12 @@
                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Apellidos"
+                android:text="Sobre nosotros"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvApellidosPaciente"
+                android:id="@+id/seccionSobreEmpresa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -111,7 +109,7 @@
                 android:textSize="15sp"  />
 
             <TextView
-                android:id="@+id/tvDniPaciente"
+                android:id="@+id/seccionOtros"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

@@ -18,6 +18,6 @@
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.ProfileFragment"
-        android:label="Perfil"
+        android:label="About"
         tools:layout="@layout/fragment_profile" />
 </navigation>

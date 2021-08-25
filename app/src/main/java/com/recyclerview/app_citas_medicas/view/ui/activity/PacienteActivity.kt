@@ -23,7 +23,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_profile.view.*
 
-class PacienteActivity : AppCompatActivity(), Comunicator_Paciente, Comunicador_Act_Frag {
+class PacienteActivity : AppCompatActivity(){
 
     private lateinit var map:GoogleMap
     private val db = Firebase.firestore
@@ -66,6 +66,7 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente, Comunicador_
 
 
     // Para ser el puente entre fragments para pasar los datos del fragment_profile y fragment_edit_paciente_prodfile
+    /*
     override fun passDataFroProfiletoEdite(dnitext: String) {
         val bundle = Bundle()
         bundle.putString("dni", dnitext)
@@ -86,4 +87,6 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente, Comunicador_
         fragmentPacienteProfile.arguments= bundle
         // Intercambio de fragments
     }
+
+     */
 }
