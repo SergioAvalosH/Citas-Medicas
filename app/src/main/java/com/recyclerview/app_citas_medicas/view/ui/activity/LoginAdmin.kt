@@ -55,5 +55,9 @@ class LoginAdmin : AppCompatActivity() {
                 Toast.makeText(this, "No ingreso ningun dato", Toast.LENGTH_SHORT).show()
             }
         }
+        tvARegresar.setOnClickListener {
+            val intento = Intent(this,ElecLogeo::class.java)
+            startActivity(intento)
+        }
     }
 }
