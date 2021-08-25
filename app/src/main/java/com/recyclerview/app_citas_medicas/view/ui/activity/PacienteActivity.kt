@@ -50,11 +50,7 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
             startActivity(intent)
         }
 
-
-
         val dni: String? = intent.getStringExtra("dni")
-
-        findViewById<TextView>(R.id.tvDniPaciente).text = dni
 
         mensajeBienvenida.text= "Bienvenido"
 
