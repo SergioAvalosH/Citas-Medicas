@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
-import com.recyclerview.app_citas_medicas.view.ui.fragments.AdminMenu
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginAdministradorFragment
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginPaciente
 import kotlinx.android.synthetic.main.fragment_login_paciente.*
@@ -47,12 +46,8 @@ class MainActivity : AppCompatActivity() {
                         startActivity(intent)
                     } else {
                         if (tipobd == tipoadmin) {
-                            val fragments = AdminMenu()
-                            val manager = supportFragmentManager
-                            val transaction= manager.beginTransaction()
-                            transaction.replace(R.id.login_paciente,fragments)
-                            transaction.addToBackStack(null)
-                            transaction.commit()
+                            val intent = Intent(this, AdminMenu::class.java)
+                            startActivity(intent)
                         }
                     }
                 }
@@ -62,95 +57,5 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RegisterPacient::class.java)
             startActivity(intent)
         }
-        /**/
-        /*tvPRegistrar.setOnClickListener{
-            db.collection("pacientes").document(tvPDNI.text.toString()).set(
-                hashMapOf(
-                    "DNI" to tvPDNI.text.toString(),
-                    "Nombres" to tvPName.text.toString(),
-                    "Apellidos" to tvPSurname.text.toString(),
-                    "Contraseña" to  tvPPassword.text.toString())
-            )
-            tvPDNI.text.clear()
-            tvPName.text.clear()
-            tvPSurname.text.clear()
-            tvPPassword.text.clear()
-        }*/
-
-        /*tvPRegistrar.setOnClickListener{
-            db.collection("pacientes").document(tvPDNI.text.toString()).set(
-                hashMapOf(
-                    "DNI" to tvPDNI.text.toString(),
-                    "Nombres" to tvPName.text.toString(),
-                    "Apellidos" to tvPSurname.text.toString(),
-                    "Contraseña" to  tvPPassword.text.toString())
-            )
-            tvPDNI.text.clear()
-            tvPName.text.clear()
-            tvPSurname.text.clear()
-            tvPPassword.text.clear()
-        }*/
-        /*tvAAdmin.setOnClickListener {
-            val fragments = LoginAdministradorFragment()
-            val manager = supportFragmentManager
-            val transaction= manager.beginTransaction()
-            transaction.replace(R.id.fragment_view_indice,fragments)
-            transaction.addToBackStack(null)
-            transaction.commit()
-
-        }*/
-        /*val fragments = LoginPaciente()
-        val manager = supportFragmentManager
-        val transaction= manager.beginTransaction()
-        tvPPaciente.setOnClickListener {
-            transaction.replace(R.id.fragment_view_indice,fragments)
-            transaction.addToBackStack(null)
-            transaction.commit()
-
-        }*/
-
-        /*tvPRegistrar.setOnClickListener{
-            db.collection("pacientes").document(tvPDNI.text.toString()).set(
-                hashMapOf(
-                    "DNI" to tvPDNI.text.toString(),
-                    "Nombres" to tvPName.text.toString(),
-                    "Apellidos" to tvPSurname.text.toString(),
-                    "Contraseña" to  tvPPassword.text.toString())
-            )
-            tvPDNI.text.clear()
-            tvPName.text.clear()
-            tvPSurname.text.clear()
-            tvPPassword.text.clear()
-        }*/
-        /*tvIngresar.setOnClickListener {
-            usuario =  findViewById(Puser)
-            contraseña =  findViewById(Ppassword)
-            var user:String = usuario.text.toString()
-            var password:String = contraseña.text.toString()
-            var userbd:String = ""
-            var passwordbd:String = ""
-
-            db.collection("pacientes").get().addOnSuccessListener { result ->
-                for (documento in result){
-                    userbd = documento["DNI"].toString()
-                    passwordbd = documento["Contraseña"].toString()
-                }
-                if (user == userbd && password == passwordbd){
-                    val intent = Intent( this,PacienteActivity::class.java)
-                    startActivity(intent)
-                }
-
-            } .addOnFailureListener{
-
-            }
-
-        }*/
-
     }
-
-
-
-
-
-
 }
