@@ -17,9 +17,9 @@
 
         <ImageView
             android:id="@+id/UserAvatar"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            tools:src="@drawable/ic_profile_paciente" />
+            android:layout_width="266dp"
+            android:layout_height="188dp"
+            android:background="@drawable/ic_profile_paciente" />
 
         <TextView
             android:id="@+id/textView2"
@@ -27,7 +27,6 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             tools:text="Datos del Perfil"
-            android:layout_margin="25dp"
             android:textStyle="bold"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
@@ -132,7 +131,6 @@
                 android:id="@+id/editarDatosPaciente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Editar Perfil"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"/>
@@ -141,7 +139,6 @@
                 android:id="@+id/editarContraseñaPaciente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Cambiar Contraseña"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
