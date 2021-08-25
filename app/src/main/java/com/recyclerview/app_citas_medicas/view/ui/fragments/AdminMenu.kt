@@ -43,8 +43,8 @@ class AdminMenu : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val button = view.findViewById<Button>(R.id.btn_manage_profiles)
-        button.setOnClickListener {
+        val boton:Button = view.findViewById(R.id.btn_manage_profiles)
+        boton.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_adminMenu_to_gestionPerfiles)
         }
     }

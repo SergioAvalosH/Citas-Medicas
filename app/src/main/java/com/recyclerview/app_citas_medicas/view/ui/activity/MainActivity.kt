@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                 if (user == userbd && password == passwordbd) {
                     if (tipobd == tipopaciente) {
                         val intent = Intent(this, PacienteActivity::class.java)
-
+                        intent.putExtra("dni",userbd)
                         startActivity(intent)
                     } else {
                         if (tipobd == tipoadmin) {
