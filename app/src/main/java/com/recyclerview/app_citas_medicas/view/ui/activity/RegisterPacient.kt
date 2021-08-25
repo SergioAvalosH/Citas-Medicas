@@ -27,6 +27,7 @@ class RegisterPacient : AppCompatActivity() {
             tvPName.text.clear()
             tvPSurname.text.clear()
             tvPPassword.text.clear()
+
         }
         tvVolver.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

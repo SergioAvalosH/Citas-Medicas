@@ -19,7 +19,7 @@
             android:id="@+id/UserAvatar"
             android:layout_width="match_parent"
             android:layout_height="140dp"
-            tools:src="@drawable/avatarPaciente" />
+            tools:src="@drawable/icon_user_logo" />
 
         <TextView
             android:id="@+id/textView2"
