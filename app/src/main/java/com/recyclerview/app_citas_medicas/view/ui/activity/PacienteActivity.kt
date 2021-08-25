@@ -24,10 +24,7 @@ import kotlinx.android.synthetic.main.fragment_profile.view.*
 class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
 
     private lateinit var map:GoogleMap
-    val db = Firebase.firestore
-    lateinit var nombrePac: TextView
-    lateinit var apellidoPac: TextView
-    lateinit var dniPac: TextView
+    private val db = Firebase.firestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,9 +57,10 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
 
         val dni: String? = intent.getStringExtra("dni")
 
-        nombrePac = findViewById(R.id.tvNombresPaciente)
-        apellidoPac = findViewById(R.id.tvApellidosPaciente)
-        dniPac = findViewById(R.id.tvDniPaciente)
+        val nombrePac = findViewById<TextView>(R.id.tvNombresPaciente)
+        val apellidoPac = findViewById<TextView>(R.id.tvApellidosPaciente)
+        val dniPac = findViewById<TextView>(R.id.tvDniPaciente)
+
         dniPac.text = dni
         db.collection("usuarios").document(dniPac.text.toString()).get().addOnSuccessListener {
             nombrePac.text = (it.get("Nombres") as String?)
