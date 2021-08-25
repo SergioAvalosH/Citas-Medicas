@@ -21,6 +21,8 @@ class UbicacionActivity : AppCompatActivity(), OnMapReadyCallback {
         val actionBar = supportActionBar
         actionBar!!.title = "Ubicacion Hospital"
         actionBar.setDisplayHomeAsUpEnabled(true)
+
+        // PAra el mapa
         createFragment()
     }
     private fun createFragment(){

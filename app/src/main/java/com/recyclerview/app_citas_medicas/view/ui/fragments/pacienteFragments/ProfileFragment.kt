@@ -45,7 +45,7 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
-
+        /*
         displayMessage = arguments?.getString("dni")
         view.tvDniPaciente.text = displayMessage
 
@@ -64,6 +64,8 @@ class ProfileFragment : Fragment() {
         }
         view.tvNombresPaciente.text = nombres
         view.tvApellidosPaciente.text = apellidos
+
+         */
         return view
     }
 
