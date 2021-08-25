@@ -52,6 +52,10 @@ class ProfileFragment : Fragment() {
             comunicator.passDataFroProfiletoEdite(view.tvDniPaciente.text.toString())
 
         }
+        db.collection("usuarios").document(view.tvDniPaciente.text.toString()).get().addOnSuccessListener {
+            view.tvNombresPaciente.text = it.get("Nombres" )as String?
+            view.tvApellidosPaciente.text = it.get("Apellidos" )as String?
+        }
 
         return view
     }

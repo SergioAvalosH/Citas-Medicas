@@ -50,25 +50,13 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
             startActivity(intent)
         }
 
-        // Mensaje
-        /*editarContraseñaPaciente.setOnClickListener{
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
-        }*/
+
 
         val dni: String? = intent.getStringExtra("dni")
 
-        var nombrePac = findViewById<TextView>(R.id.tvNombresPaciente)
-        var apellidoPac = findViewById<TextView>(R.id.tvApellidosPaciente)
-        var dniPac = findViewById<TextView>(R.id.tvDniPaciente)
+        findViewById<TextView>(R.id.tvDniPaciente).text = dni
 
-        dniPac.text = dni
-        db.collection("usuarios").document(dniPac.text.toString()).get().addOnSuccessListener {
-            nombrePac.text = (it.get("Nombres") as String?)
-            apellidoPac.text = (it.get("Apellidos") as String?)
-        }
-
-        var nombre: String = nombrePac.text.toString()
-        mensajeBienvenida.text= "Bienvenido User: $nombre"
+        mensajeBienvenida.text= "Bienvenido"
 
 
     }
