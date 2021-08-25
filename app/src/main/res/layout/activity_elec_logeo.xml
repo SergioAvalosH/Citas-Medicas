@@ -29,6 +29,7 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="Administrador"
             android:textSize="15dp"
+            app:cornerRadius="20dp"
             android:textStyle="bold"
             app:backgroundTint="@color/f_letra" />
 
@@ -42,6 +43,7 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="Paciente"
             android:textSize="15dp"
+            app:cornerRadius="20dp"
             app:backgroundTint="@color/f_letra" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

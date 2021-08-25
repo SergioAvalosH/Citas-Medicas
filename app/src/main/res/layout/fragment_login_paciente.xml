@@ -102,6 +102,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Ingresar"
+                    app:cornerRadius="20dp"
                     android:textStyle="bold"
                     app:backgroundTint="@color/f_letra"
                     app:elevation="5dp" />

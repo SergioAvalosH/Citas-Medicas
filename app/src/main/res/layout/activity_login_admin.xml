@@ -87,6 +87,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Ingresar"
+                    app:cornerRadius="20dp"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     app:backgroundTint="#5E71E3"

@@ -8,7 +8,7 @@
     tools:context=".view.ui.activity.RegisterPacient">
 
     <LinearLayout
-        android:layout_width="350dp"
+        android:layout_width="290dp"
         android:layout_height="500dp"
         android:layout_gravity="center_vertical"
         android:layout_margin="70dp"
@@ -126,6 +126,7 @@
                     android:layout_weight="0.5"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Registrar"
+                    app:cornerRadius="20dp"
                     android:textSize="12dp"
                     app:backgroundTint="@color/f_letra"
                     app:elevation="5dp" />
@@ -138,6 +139,7 @@
                     android:layout_weight="0.5"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Volver"
+                    app:cornerRadius="20dp"
                     android:textSize="12dp"
                     app:backgroundTint="@color/f_letra"
                     app:elevation="5dp" />
