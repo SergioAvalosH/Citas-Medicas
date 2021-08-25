@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable/backgound_gradient.xml" value="0.2078125" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_admin_menu.xml" value="0.1" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_edit_paciente_profile.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_edit_profile.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_gestion_perfiles.xml" value="0.5" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_home.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_indice.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_login_administrador.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_login_paciente.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_registro_paciente.xml" value="0.19166666666666668" />
       </map>
     </option>
   </component>
@@ -17,7 +25,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.18703703703703703" />
+        <option name="scale" value="0.5" />
       </ProjectState>
     </option>
   </component>

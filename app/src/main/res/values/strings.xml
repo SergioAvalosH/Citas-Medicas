@@ -2,15 +2,18 @@
     <string name="app_name">Aplicación - Citas Médicas</string>
     <!-- Strings de la ventana administrador -->
     <string name="title_admi_menu">Bienvenido</string>
-    <string name="lbl_btn_gestionar_profiles">Gestionar Perfiles</string>
+    <string name="lbl_btn_gestionar_profiles">Editar Perfil</string>
     <string name="lbl_btn_gestionar_med_espec">Gestionar Medicos y Especialidades</string>
     <string name="lbl_btn_gestionar_citas">Gestionar Citas</string>
     <string name="lbl_btn_logout">Cerrar Sesión</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!-- String de la ventana Gestion de perfiles -->
-    <string name="title_menu_profiles">Gestión de Perfiles</string>
-    <string name="lbl_btn_edit_profile">Editar Perfil</string>
-    <string name="lbl_btn_new_profile">Nuevo Perfil</string>
+    <!-- Strings de la ventana Editar perfil -->
+    <string name="title_menu_profiles">Editar Perfil</string>
+    <string name="lbl_names">Nombres</string>
+    <string name="lbl_lastname">Apellidos</string>
+    <string name="lbl_username">Nombre de Usuario</string>
+    <string name="lbl_password">Contraseña</string>
+    <string name="lbl_btn_save_changes">Guardar Cambios</string>
 </resources>
