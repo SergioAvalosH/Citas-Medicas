@@ -53,9 +53,14 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente, Comunicador_
         }
 
         val dni: String? = intent.getStringExtra("dni")
-
-
         mensajeBienvenidaDNI.text= dni
+
+        // Pra ver perfil
+        verPerfil.setOnClickListener{
+            val intent = Intent(this, CrearCitaActivity::class.java)
+            intent.putExtra("dni", mensajeBienvenidaDNI.text.toString())
+            startActivity(intent)
+        }
 
     }
 
