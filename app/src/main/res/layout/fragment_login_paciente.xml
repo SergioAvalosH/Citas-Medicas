@@ -52,6 +52,7 @@
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Usuario"
+                android:maxLength="8"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -60,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:maxLength="20"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:fontFamily="@font/poppins_semibold"
