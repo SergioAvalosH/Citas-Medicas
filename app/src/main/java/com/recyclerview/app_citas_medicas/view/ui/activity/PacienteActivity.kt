@@ -49,6 +49,10 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
         editarContraseñaPaciente.setOnClickListener{
             Toast.makeText(this, "¿Por que me toca, gay?", Toast.LENGTH_SHORT).show()
         }
+
+        val dni: String? = intent.getStringExtra("dni")
+        mensajeBienvenida.text= "Bienvenido User: $dni"
+
     }
 
 
