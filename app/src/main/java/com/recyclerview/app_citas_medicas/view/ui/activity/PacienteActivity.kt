@@ -61,7 +61,7 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
         val apellidoPac = findViewById<TextView>(R.id.tvApellidosPaciente)
         val dniPac = findViewById<TextView>(R.id.tvDniPaciente)
 
-        dniPac.text = dni
+        dni.also { dniPac.text = it }
         db.collection("usuarios").document(dniPac.text.toString()).get().addOnSuccessListener {
             nombrePac.text = (it.get("Nombres") as String?)
             apellidoPac.text = (it.get("Apellidos") as String?)
