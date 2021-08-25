@@ -7,69 +7,91 @@
     android:background="@drawable/backgound_gradient"
     tools:context=".view.ui.activity.CrearCitaActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:layout_marginBottom="100dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp"
-            android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                android:layout_marginBottom="30dp"
-                android:text="Especialidad" />
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Especialidad"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
 
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EspSpinner" />
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                android:layout_marginBottom="30dp"
-                android:text="Medico" />
+        <Spinner
+            android:id="@+id/EspSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textViewMedico"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                android:layout_marginBottom="30dp"
-                android:text="Luis" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Medico"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
+        <TextView
+            android:id="@+id/textViewMedico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Luis"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
-            <Button
-                android:id="@+id/bntGuardarCita"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:textStyle="bold"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Guardar Cita"/>
-            <!--Y asi, poner mas XD-->
-        </LinearLayout>
-    </ScrollView>
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Ingrese Fecha"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Fecha"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/SpinnerHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bntGuardarCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Guardar Cita"
+            android:textStyle="bold" />
+        <!--Y asi, poner mas XD-->
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
