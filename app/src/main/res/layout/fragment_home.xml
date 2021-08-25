@@ -24,9 +24,9 @@
             android:text="CLINICA LOS SUGARS DE SERGIO Y FERNANDO" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="248dp"
-            android:layout_gravity="top"
+            android:layout_width="264dp"
+            android:layout_height="153dp"
+            android:layout_gravity="center"
             android:layout_margin="10dp"
             android:src="@drawable/home">
 
@@ -66,6 +66,16 @@
 
             <Button
                 android:id="@+id/verUbicacionHospital"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:text="Ver Ubicacion"
+                android:fontFamily="@font/poppins_semibold"
+                app:backgroundTint="@color/f_letra"
+                app:cornerRadius="20dp"/>
+
+            <Button
+                android:id="@+id/verPerfil"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_margin="10dp"

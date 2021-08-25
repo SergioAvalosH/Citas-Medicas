@@ -16,4 +16,6 @@
     <string name="lbl_username">Nombre de Usuario</string>
     <string name="lbl_password">Contraseña</string>
     <string name="lbl_btn_save_changes">Guardar Cambios</string>
+
+    <!--String par ala ventan-->
 </resources>
