@@ -87,13 +87,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="indiceFragment">
+                  <entry key="loginPaciente">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1503" />
-                            <option name="y" value="-785" />
+                            <option name="x" value="-1674" />
+                            <option name="y" value="-653" />
                           </Point>
                         </option>
                       </LayoutPositions>

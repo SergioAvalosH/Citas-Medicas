@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/adminMenu"
+    android:background="@drawable/backgound_gradient"
+    tools:context=".view.ui.activity.AdminMenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_horizontal"
+                android:text="@string/title_admi_menu"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btn_manage_profiles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_managment_profiles"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/lbl_btn_gestionar_profiles"
+                android:textSize="15sp"
+                app:backgroundTint="#5E71E3"
+                tools:ignore="ButtonStyle,RtlHardcoded" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_managment_medical"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/lbl_btn_gestionar_med_espec"
+                android:textSize="15sp"
+                app:backgroundTint="#5E71E3"
+                tools:ignore="ButtonStyle,RtlHardcoded" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_managment_citas"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/lbl_btn_gestionar_citas"
+                android:textSize="15sp"
+                app:backgroundTint="#5E71E3"
+                tools:ignore="ButtonStyle,RtlHardcoded" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_logout"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/lbl_btn_logout"
+                android:textSize="15sp"
+                app:backgroundTint="#5E71E3"
+                tools:ignore="ButtonStyle,RtlHardcoded" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

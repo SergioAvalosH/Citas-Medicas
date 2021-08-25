@@ -4,10 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable/backgound_gradient.xml" value="0.2078125" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_admin_menu.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_crear_cita.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_edit_profile_manager.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_paciente.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_register_pacient.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_admin_menu.xml" value="0.1" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_citas.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_edit_paciente_profile.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_edit_profile.xml" value="0.19166666666666668" />
-        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_gestion_perfiles.xml" value="0.5" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_gestion_perfiles.xml" value="0.38333333333333336" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_home.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_indice.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_login_administrador.xml" value="0.19166666666666668" />

@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
-import com.recyclerview.app_citas_medicas.view.ui.fragments.AdminMenu
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginAdministradorFragment
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginPaciente
 import kotlinx.android.synthetic.main.fragment_login_paciente.*
@@ -47,12 +46,8 @@ class MainActivity : AppCompatActivity() {
                         startActivity(intent)
                     } else {
                         if (tipobd == tipoadmin) {
-                            val fragments = AdminMenu()
-                            val manager = supportFragmentManager
-                            val transaction= manager.beginTransaction()
-                            transaction.replace(R.id.login_paciente,fragments)
-                            transaction.addToBackStack(null)
-                            transaction.commit()
+                            val intent = Intent(this, AdminMenu::class.java)
+                            startActivity(intent)
                         }
                     }
                 }
