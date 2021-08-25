@@ -3,6 +3,7 @@ package com.recyclerview.app_citas_medicas.view.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -10,9 +11,12 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
 import com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.EditPacienteProfileFragment
 import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
+import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.view.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_profile.view.*
@@ -20,6 +24,10 @@ import kotlinx.android.synthetic.main.fragment_profile.view.*
 class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
 
     private lateinit var map:GoogleMap
+    val db = Firebase.firestore
+    lateinit var nombrePac: TextView
+    lateinit var apellidoPac: TextView
+    lateinit var dniPac: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,7 +59,19 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
         }*/
 
         val dni: String? = intent.getStringExtra("dni")
-        mensajeBienvenida.text= "Bienvenido User: $dni"
+
+        nombrePac = findViewById(R.id.tvNombresPaciente)
+        apellidoPac = findViewById(R.id.tvApellidosPaciente)
+        dniPac = findViewById(R.id.tvDniPaciente)
+        dniPac.text = dni
+        db.collection("usuarios").document(dniPac.text.toString()).get().addOnSuccessListener {
+            nombrePac.text = (it.get("Nombres") as String?)
+            apellidoPac.text = (it.get("Apellidos") as String?)
+        }
+
+        var nombre: String = nombrePac.text.toString()
+        mensajeBienvenida.text= "Bienvenido User: $nombre"
+
 
     }
 
