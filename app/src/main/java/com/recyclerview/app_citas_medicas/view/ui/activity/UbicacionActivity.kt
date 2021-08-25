@@ -37,7 +37,7 @@ class UbicacionActivity : AppCompatActivity(), OnMapReadyCallback {
         map.addMarker(marker)
         map.animateCamera(
             CameraUpdateFactory.newLatLngZoom(coordinates, 10f),
-            4000,
+            2000,
             null
         )
     }

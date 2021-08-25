@@ -56,31 +56,31 @@ class EditPacienteProfileFragment : Fragment() {
 
         // Lamacenar el dni y el password
         dni = displayMessage
-        db.collection("usuarios").document(tvDNI.text.toString()).get().addOnSuccessListener {
+        db.collection("usuarios").document(view.tvDNI.text.toString()).get().addOnSuccessListener {
             contrasenia = it.get("Contraseña") as String?
             view.tvName.setText(it.get("Nombres") as String?)
             view.tvSurname.setText(it.get("Apellidos") as String?)
         }
 
         // actualizar
-        UpdatePacienteProfile.setOnClickListener{
+        view.UpdatePacienteProfile.setOnClickListener{
             var mensaje: String? = ""
-            if(contrasenia == tvPassword.text.toString() ){
-                db.collection("usuarios").document(tvDNI.text.toString()).set(
+            if(contrasenia == view.tvPassword.text.toString() ){
+                db.collection("usuarios").document(view.tvDNI.text.toString()).set(
                     hashMapOf(
-                        "Nombres" to tvName.text.toString(),
-                        "Apellidos" to tvSurname.text.toString(),
-                        "Contraseña" to  tvPassword.text.toString())
+                        "Nombres" to view.tvName.text.toString(),
+                        "Apellidos" to view.tvSurname.text.toString(),
+                        "Contraseña" to  view.tvPassword.text.toString())
                 )
                 mensaje = "¡Actualizado!"
             }else{
-                mensajeError.text = "Error, ingrese bien su contraseña"
-                tvName.text.clear()
-                tvSurname.text.clear()
-                tvPassword.text.clear()
+                view.mensajeError.text = "Error, ingrese bien su contraseña"
+                view.tvName.text.clear()
+                view.tvSurname.text.clear()
+                view.tvPassword.text.clear()
                 mensaje = "¡Sin Actualizar!"
             }
-            tvConfUpdate.text = mensaje
+            view.tvConfUpdate.text = mensaje
         }
 
         return view
