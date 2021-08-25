@@ -37,8 +37,8 @@ class PerfilPacienteActivity : AppCompatActivity() {
         dniPaciente.text= dni
 
         db.collection("usuarios").document(dniPaciente.text.toString()).get().addOnSuccessListener {
-            nombres.text = it.get("nombres").toString()
-            apellidos.text = it.get("apellidos").toString()
+            nombres.text = it.get("Nombres") as String?
+            apellidos.text = it.get("Apellidos") as String?
         }
 
         editarPerfil = findViewById(R.id.editarDatosPaciente)
