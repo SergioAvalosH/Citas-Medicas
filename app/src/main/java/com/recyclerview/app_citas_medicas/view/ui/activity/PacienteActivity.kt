@@ -57,11 +57,11 @@ class PacienteActivity : AppCompatActivity(), Comunicator_Paciente {
 
         val dni: String? = intent.getStringExtra("dni")
 
-        val nombrePac = findViewById<TextView>(R.id.tvNombresPaciente)
-        val apellidoPac = findViewById<TextView>(R.id.tvApellidosPaciente)
-        val dniPac = findViewById<TextView>(R.id.tvDniPaciente)
+        var nombrePac = findViewById<TextView>(R.id.tvNombresPaciente)
+        var apellidoPac = findViewById<TextView>(R.id.tvApellidosPaciente)
+        var dniPac = findViewById<TextView>(R.id.tvDniPaciente)
 
-        dni.also { dniPac.text = it }
+        dniPac.text = dni
         db.collection("usuarios").document(dniPac.text.toString()).get().addOnSuccessListener {
             nombrePac.text = (it.get("Nombres") as String?)
             apellidoPac.text = (it.get("Apellidos") as String?)
