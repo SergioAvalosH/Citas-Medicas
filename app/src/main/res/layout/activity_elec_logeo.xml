@@ -4,6 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ElecLogeo">
+    android:background="@drawable/backgound_gradient"
+    tools:context=".view.ui.activity.ElecLogeo">
 
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="70dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btvAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_admin"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Administrador"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/f_letra" />
+
+        <Button
+            android:id="@+id/btvPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/ic_user"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Paciente"
+            android:textSize="15dp"
+            app:backgroundTint="@color/f_letra" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

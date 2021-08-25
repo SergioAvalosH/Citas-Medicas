@@ -52,8 +52,9 @@ class MainActivity : AppCompatActivity() {
                         tvPPassword.text.clear()
                     } else {
                         if (tipobd == tipoadmin) {
-                            val intent = Intent(this, AdminMenu::class.java)
-                            startActivity(intent)
+                            Toast.makeText(this, "No es un paciente!!! Intente de nuevo", Toast.LENGTH_SHORT).show()
+                            /*val intent = Intent(this, AdminMenu::class.java)
+                            startActivity(intent)*/
                             tvPDNI.text.clear()
                             tvPName.text.clear()
                             tvPSurname.text.clear()
