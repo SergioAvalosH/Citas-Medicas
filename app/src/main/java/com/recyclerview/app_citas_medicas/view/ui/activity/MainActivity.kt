@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
-import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginAdministradorFragment
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginPaciente
 import kotlinx.android.synthetic.main.activity_register_pacient.*
 import kotlinx.android.synthetic.main.fragment_login_paciente.*

@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
         android:padding="70dp"
@@ -23,7 +23,7 @@
             android:id="@+id/UserAvatar"
             android:layout_width="match_parent"
             android:layout_height="140dp"
-            tools:src="@drawable/ic_profile_paciente" />
+            android:src="@drawable/ic_user" />
 
         <TextView
             android:id="@+id/textView2"
@@ -32,17 +32,16 @@
             android:layout_margin="25dp"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
-            android:text="TextView"
+            android:text="Datos de Perfil"
             android:textColor="@color/white"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            tools:text="Datos del Perfil" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/seccionNombres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp"
+            android:layout_marginBottom="12dp"
             android:orientation="vertical">
 
             <TextView
@@ -71,7 +70,7 @@
             android:id="@+id/seccionApellidos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp"
+            android:layout_marginBottom="12dp"
             android:orientation="vertical">
 
             <TextView
@@ -100,7 +99,7 @@
             android:id="@+id/seccionDNI"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="12dp"
             android:orientation="vertical">
 
             <TextView
@@ -129,7 +128,7 @@
             android:id="@+id/seccionPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="12dp"
             android:orientation="vertical">
 
             <Button
