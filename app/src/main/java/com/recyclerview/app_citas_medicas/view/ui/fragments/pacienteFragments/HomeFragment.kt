@@ -40,8 +40,8 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_home, container, false)
-        comunicator = activity as Comunicador_Act_Frag
-        comunicator.comunicadorActivityMai_ProfileFragment(view.mensajeBienvenidaDNI.text.toString())
+        //comunicator = activity as Comunicador_Act_Frag
+        //comunicator.comunicadorActivityMai_ProfileFragment(view.mensajeBienvenidaDNI.text.toString())
         return view
     }
 
