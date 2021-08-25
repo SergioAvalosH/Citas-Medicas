@@ -47,14 +47,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <Button
                 android:id="@+id/crearCitaPaciente"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_margin="10dp"
-                android:text="Reservar cita"
                 android:fontFamily="@font/poppins_semibold"
-                app:cornerRadius="20dp"/>
+                android:text="Reservar cita"
+                app:cornerRadius="20dp" />
+
             <Button
                 android:id="@+id/verUbicacionHospital"
                 android:layout_width="match_parent"

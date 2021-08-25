@@ -12,7 +12,6 @@ import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
 import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.*
 import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.view.*
-import kotlinx.android.synthetic.main.fragment_registro_paciente.*
 
 
 

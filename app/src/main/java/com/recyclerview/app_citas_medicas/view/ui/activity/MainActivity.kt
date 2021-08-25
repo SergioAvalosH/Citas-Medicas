@@ -15,7 +15,6 @@ import com.recyclerview.app_citas_medicas.view.ui.fragments.AdminMenu
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginAdministradorFragment
 import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginPaciente
 import kotlinx.android.synthetic.main.fragment_login_paciente.*
-import kotlinx.android.synthetic.main.fragment_registro_paciente.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -58,21 +57,11 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-        /*tvPRegistrar.setOnClickListener{
-            db.collection("usuarios").document(tvPDNI.text.toString()).set(
-                hashMapOf(
-                    "DNI" to tvPDNI.text.toString(),
-                    "Nombres" to tvPName.text.toString(),
-                    "Apellidos" to tvPSurname.text.toString(),
-                    "Contraseña" to  tvPPassword.text.toString(),
-                    "Tipo" to "Paciente"
-                )
-            )
-            tvPDNI.text.clear()
-            tvPName.text.clear()
-            tvPSurname.text.clear()
-            tvPPassword.text.clear()
-        }*/
+        linkRegister.setOnClickListener{
+            val intent = Intent(this, RegisterPacient::class.java)
+            startActivity(intent)
+        }
+        /**/
         /*tvPRegistrar.setOnClickListener{
             db.collection("pacientes").document(tvPDNI.text.toString()).set(
                 hashMapOf(
