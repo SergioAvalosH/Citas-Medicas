@@ -7,7 +7,7 @@
         android:icon="@drawable/ic_home_paciente"/>
     <item
         android:id="@+id/citasFragment"
-        android:title="Citas"
+        android:title="Noticias"
         android:icon="@drawable/ic_citas_paciente"/>
     <item
         android:id="@+id/profileFragment"

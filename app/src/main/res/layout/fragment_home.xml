@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <Button
+            <!--<Button
                 android:id="@+id/verCitas"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -62,7 +62,7 @@
                 android:text="Ver Citas"
                 android:fontFamily="@font/poppins_semibold"
                 app:backgroundTint="@color/f_letra"
-                app:cornerRadius="20dp"/>
+                app:cornerRadius="20dp"/>-->
             <Button
                 android:id="@+id/verPerfil"
                 android:layout_width="match_parent"

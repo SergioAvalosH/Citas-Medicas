@@ -9,12 +9,20 @@
         android:id="@+id/homeFragment"
         android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/activity_paciente" >
+        <action
+            android:id="@+id/action_homeFragment_to_citasFragment"
+            app:destination="@id/citasFragment" />
+    </fragment>
     <fragment
         android:id="@+id/citasFragment"
         android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.CitasFragment"
-        android:label="Citas"
-        tools:layout="@layout/fragment_citas" />
+        android:label="Noticias"
+        tools:layout="@layout/fragment_citas" >
+        <action
+            android:id="@+id/action_citasFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.ProfileFragment"

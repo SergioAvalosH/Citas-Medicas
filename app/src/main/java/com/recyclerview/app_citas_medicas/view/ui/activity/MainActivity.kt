@@ -44,28 +44,21 @@ class MainActivity : AppCompatActivity() {
                             if (tipobd == tipoadmin) {
                                 Toast.makeText(this, "Es un administrador !!!!! " +
                                         "Intente Nuevamente", Toast.LENGTH_SHORT).show()
-                                tvPDNI.text.clear()
-                                tvPName.text.clear()
-                                tvPSurname.text.clear()
-                                tvPPassword.text.clear()
+                                tvUser.text.clear()
+                                tvLPassword.text.clear()
                             }
                         }
                     } else {
                         Toast.makeText(this, "Usuario o Contraseña erronea", Toast.LENGTH_SHORT).show()
-                        tvPDNI.text.clear()
-                        tvPName.text.clear()
-                        tvPSurname.text.clear()
-                        tvPPassword.text.clear()
+                        tvUser.text.clear()
+                        tvLPassword.text.clear()
                     }
                 }
             } else {
                     Toast.makeText(this, "No ingreso ningun dato", Toast.LENGTH_SHORT).show()
             }
         }
-        tvRegresar.setOnClickListener{
-            val intent = Intent(this, ElecLogeo::class.java)
-            startActivity(intent)
-        }
+
         linkRegister.setOnClickListener{
             val intent = Intent(this, RegisterPacient::class.java)
             startActivity(intent)

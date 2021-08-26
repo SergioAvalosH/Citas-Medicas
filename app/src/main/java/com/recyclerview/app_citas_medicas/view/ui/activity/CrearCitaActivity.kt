@@ -22,11 +22,12 @@ import kotlin.collections.ArrayList
 class CrearCitaActivity : AppCompatActivity() {
 
     val db = Firebase.firestore
+
     var datalista=ArrayList<String>()
     var horalista=ArrayList<String>()
     private lateinit var tvFecha: TextView
     private lateinit var btnFecha: Button
-
+    var dnir = ""
     private lateinit var volver: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -83,14 +84,22 @@ class CrearCitaActivity : AppCompatActivity() {
 
         bntGuardarCita.setOnClickListener {
 
-            db.collection("citas").document(tvDPaciente.text.toString()).set(
-                hashMapOf(
-                    "DNI" to tvDPaciente.text.toString(),
-                    "Especialidad" to EspSpinner.selectedItem.toString(),
-                    "Fecha" to tvFecha.text,
-                    "Hora" to  SpinnerHora.selectedItem.toString()
+            if(dnir != tvDPaciente.text.toString()){
+                db.collection("citas").document(tvDPaciente.text.toString()).set(
+                    hashMapOf(
+                        "DNI" to tvDPaciente.text.toString(),
+                        "Especialidad" to EspSpinner.selectedItem.toString(),
+                        "Fecha" to tvFecha.text,
+                        "Hora" to  SpinnerHora.selectedItem.toString()
+                    )
+
                 )
-            )
+                dnir=tvDPaciente.text.toString()
+            } else {
+                Toast.makeText(this, "El paciente tiene una cita programada", Toast.LENGTH_SHORT).show()
+                SpinnerHora.selectedItem.equals("")
+            }
+
         }
 
 
