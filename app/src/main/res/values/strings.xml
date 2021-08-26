@@ -23,6 +23,16 @@
     <string name="title_new_especialidad">Nueva Especialidad</string>
     <string name="lbl_btn_save_especialidad">Guardar</string>
 
+    <!-- Strings del menu de estados-->
+    <string name="optn_cancel">Cancelado</string>
+    <string name="optn_realize">Realizado</string>
+    <string name="optn_pendiente">Realizado</string>
+    <string name="optn_notrealize">Realizado</string>
+
+    <!-- Strings del lista de citas-->
+    <string name="tv_especialidad">Nombre de la Especialidad</string>
+    <string name="tv_paciente">Nombre del Paciente</string>
+
     <!--String par ala ventan-->
     <string name="nombreempresa">Hospital la Caleta - Chimbote</string>
     <string name="aboutempresa">Centro hospitalario público de Segundo Nivel II-2 que ofrece servicios especializados en salud, administrado por el Gobierno Regional</string>

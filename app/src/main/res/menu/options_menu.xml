@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opt_cancelAction"
+        android:title="@string/optn_cancel" />
+    <item
+        android:id="@+id/opt_realizedAction"
+        android:title="@string/optn_realize" />
+    <item
+        android:id="@+id/opt_pendiente"
+        android:title="@string/optn_pendiente" />
+    <item
+        android:id="@+id/opt_notRealizedAction"
+        android:title="@string/optn_notrealize" />
+</menu>
