@@ -40,9 +40,8 @@ class PacienteActivity : AppCompatActivity(){
         }
 
         // Para ir a la cita
-        ListarCitaPaciente.setOnClickListener{
-            val intent = Intent(this, ListarCitas::class.java)
-            intent.putExtra("dni", mensajeBienvenidaDNI.text.toString())
+        btnCerrarSesion.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 

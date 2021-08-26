@@ -54,37 +54,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <Button
-                android:id="@+id/ListarCitaPaciente"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_margin="10dp"
-                android:fontFamily="@font/poppins_semibold"
-                app:backgroundTint="@color/f_letra"
-                android:text="Listar cita"
-                app:cornerRadius="20dp" />
-
-            <Button
-                android:id="@+id/crearCitaPaciente"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_margin="10dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Reservar cita"
-                app:backgroundTint="@color/f_letra"
-                app:cornerRadius="20dp" />
-
-            <Button
-                android:id="@+id/verUbicacionHospital"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_margin="10dp"
-                android:text="Ver Ubicacion"
-                android:fontFamily="@font/poppins_semibold"
-                app:backgroundTint="@color/f_letra"
-                app:cornerRadius="20dp"/>
-
             <Button
                 android:id="@+id/verPerfil"
                 android:layout_width="match_parent"
@@ -94,6 +63,35 @@
                 android:fontFamily="@font/poppins_semibold"
                 app:backgroundTint="@color/f_letra"
                 app:cornerRadius="20dp"/>
+            <Button
+                android:id="@+id/crearCitaPaciente"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Reservar cita"
+                app:backgroundTint="@color/f_letra"
+                app:cornerRadius="20dp" />
+            <Button
+                android:id="@+id/verUbicacionHospital"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:text="Ver Ubicacion"
+                android:fontFamily="@font/poppins_semibold"
+                app:backgroundTint="@color/f_letra"
+                app:cornerRadius="20dp"/>
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Cerrar Sesion"
+                app:backgroundTint="#CD4646"
+                app:cornerRadius="20dp" />
+
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>
