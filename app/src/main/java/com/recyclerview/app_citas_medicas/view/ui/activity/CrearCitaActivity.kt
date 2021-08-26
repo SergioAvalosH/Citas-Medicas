@@ -78,17 +78,18 @@ class CrearCitaActivity : AppCompatActivity() {
 
                 }
                 var adap=ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,horalista)
-                EspSpinner.adapter=adap
+                SpinnerHora.adapter=adap
             }
 
 
         bntGuardarCita.setOnClickListener {
+
             db.collection("citas").document(tvDPaciente.text.toString()).set(
                 hashMapOf(
-                    "DNI" to dni,
-                    "Especialidad" to EspSpinner.selectedItem,
-                    "Fecha" to tvFecha,
-                    "Hora" to  EspSpinner.selectedItem
+                    "DNI" to tvDPaciente.text.toString(),
+                    "Especialidad" to EspSpinner.selectedItem.toString(),
+                    "Fecha" to tvFecha.text,
+                    "Hora" to  SpinnerHora.selectedItem.toString()
                 )
             )
         }
