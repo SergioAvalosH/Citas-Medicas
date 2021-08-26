@@ -17,17 +17,14 @@ import kotlinx.android.synthetic.main.activity_crear_cita.*
 import kotlinx.android.synthetic.main.list_citas.*
 
 class ListarCitas : AppCompatActivity(){
-
     val db= Firebase.firestore
     var especialidad=""
     var fecha=""
     var hora=""
     var DNI=""
-
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.list_citas)
-
         db.collection("citas")
             .addSnapshotListener{querySnapshot,error->
                 if(error!=null){
@@ -45,22 +42,11 @@ class ListarCitas : AppCompatActivity(){
                 tvFechaCitas.text=fecha
                 tvHoraCitas.text=hora
             }
-
-
-
-
-
-
-
-
     }
-
     private fun mensaje(s: String) {
         AlertDialog.Builder(this).setTitle("Atencion")
             .setMessage(s)
             .setPositiveButton("OK"){d,i->}
             .show()
     }
-
-
 }
