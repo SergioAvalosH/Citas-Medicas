@@ -3,13 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable-v19/ic_baseline_arrow_back_24.xml" value="0.2078125" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable-v19/ic_return.xml" value="0.10208333333333333" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable/backgound_gradient.xml" value="0.2078125" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable/btn_redondo.xml" value="0.2078125" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2078125" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable/ic_baseline_personal_injury_24.xml" value="0.2078125" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable/ic_especialidad.xml" value="0.2078125" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable/ic_managment_profiles.xml" value="0.10208333333333333" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable/ic_profile_paciente.xml" value="0.2078125" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/drawable/ic_return.xml" value="0.10208333333333333" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_admin_menu.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_crear_cita.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_edit_profile_manager.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_elec_logeo.xml" value="0.1" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_medico_especialidad_menu.xml" value="0.33" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_paciente.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_register_pacient.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/activity_ubicacion.xml" value="0.1" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_admin_menu.xml" value="0.1" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_citas.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_edit_paciente_profile.xml" value="0.19166666666666668" />
@@ -19,6 +31,7 @@
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_indice.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_login_administrador.xml" value="0.19166666666666668" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_login_paciente.xml" value="0.19166666666666668" />
+        <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Documents/AndroidProjects/Citas-Medicas/app/src/main/res/layout/fragment_registro_paciente.xml" value="0.19166666666666668" />
       </map>
     </option>

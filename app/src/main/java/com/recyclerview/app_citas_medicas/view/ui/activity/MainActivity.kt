@@ -49,9 +49,9 @@ class MainActivity : AppCompatActivity() {
                         } else {
                             if (tipobd == tipoadmin) {
                                 Toast.makeText(this, "Es un administrador !!!!! ", Toast.LENGTH_SHORT).show()
-                                /*val intent = Intent(this, AdminMenu::class.java)
+                                val intent = Intent(this, AdminMenu::class.java)
                                 startActivity(intent)
-                                tvPDNI.text.clear()
+                                /*tvPDNI.text.clear()
                                 tvPName.text.clear()
                                 tvPSurname.text.clear()
                                 tvPPassword.text.clear()*/

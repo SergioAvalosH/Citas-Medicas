@@ -42,10 +42,10 @@
                 android:paddingBottom="10dp"
                 android:text="@string/lbl_btn_gestionar_profiles"
                 android:textSize="15sp"
-                app:backgroundTint="#5E71E3"
-                tools:ignore="ButtonStyle,RtlHardcoded" />
+                app:backgroundTint="#5E71E3"/>
 
             <Button
+                android:id="@+id/btn_ME"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -56,8 +56,7 @@
                 android:paddingBottom="10dp"
                 android:text="@string/lbl_btn_gestionar_med_espec"
                 android:textSize="15sp"
-                app:backgroundTint="#5E71E3"
-                tools:ignore="ButtonStyle,RtlHardcoded" />
+                app:backgroundTint="#5E71E3"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -70,8 +69,7 @@
                 android:paddingBottom="10dp"
                 android:text="@string/lbl_btn_gestionar_citas"
                 android:textSize="15sp"
-                app:backgroundTint="#5E71E3"
-                tools:ignore="ButtonStyle,RtlHardcoded" />
+                app:backgroundTint="#5E71E3"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -84,8 +82,7 @@
                 android:paddingBottom="10dp"
                 android:text="@string/lbl_btn_logout"
                 android:textSize="15sp"
-                app:backgroundTint="#5E71E3"
-                tools:ignore="ButtonStyle,RtlHardcoded" />
+                app:backgroundTint="#5E71E3"/>
 
         </LinearLayout>
 

@@ -17,6 +17,11 @@
     <string name="lbl_password">Contraseña</string>
     <string name="lbl_btn_save_changes">Guardar Cambios</string>
 
+    <!-- Strings de la ventana Medico y Especialidades - Menu -->
+    <string name="btn_return">Regresar</string>
+    <string name="btn_doc">Medico</string>
+    <string name="btn_esp">Especialidad</string>
+
     <!--String par ala ventan-->
     <string name="nombreempresa">Hospital la Caleta - Chimbote</string>
     <string name="aboutempresa">Centro hospitalario público de Segundo Nivel II-2 que ofrece servicios especializados en salud, administrado por el Gobierno Regional</string>

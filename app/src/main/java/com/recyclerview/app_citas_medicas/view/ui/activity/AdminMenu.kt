@@ -14,5 +14,9 @@ class AdminMenu : AppCompatActivity() {
             val intent = Intent(this, EditProfileManager::class.java)
             startActivity(intent)
         }
+        btn_ME.setOnClickListener {
+            val intent = Intent(this, MedicoEspecialidadMenu::class.java)
+            startActivity(intent)
+        }
     }
 }
