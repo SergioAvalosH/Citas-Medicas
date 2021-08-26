@@ -30,14 +30,22 @@ class PacienteActivity : AppCompatActivity(){
         setupActionBarWithNavController(navController,appBarConfiguration)
         bottomNavigationView.setupWithNavController(navController) // IControlador de l navegation
 
+        val dni: String? = intent.getStringExtra("dni")
+        mensajeBienvenidaDNI.text= dni
         // Para ir al mapa
         verUbicacionHospital.setOnClickListener{
             val intent = Intent(this, UbicacionActivity::class.java)
+            intent.putExtra("dni", mensajeBienvenidaDNI.text.toString())
             startActivity(intent)
         }
 
-        val dni: String? = intent.getStringExtra("dni")
-        mensajeBienvenidaDNI.text= dni
+        // Para ir a la cita
+        ListarCitaPaciente.setOnClickListener{
+            val intent = Intent(this, ListarCitas::class.java)
+            intent.putExtra("dni", mensajeBienvenidaDNI.text.toString())
+            startActivity(intent)
+        }
+
 
         // Para crear una nueva cita
         crearCitaPaciente.setOnClickListener{

@@ -23,11 +23,7 @@ class CrearCitaActivity : AppCompatActivity() {
 
     val db = Firebase.firestore
     var datalista=ArrayList<String>()
-    var cadena2=ArrayList<String>()
-    var namelista=ArrayList<String>()
     var horalista=ArrayList<String>()
-    var medico = ""
-    val posit = 1
     private lateinit var tvFecha: TextView
     private lateinit var btnFecha: Button
 

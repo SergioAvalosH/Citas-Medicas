@@ -20,9 +20,7 @@ class CitaAdapter(private val citaList:ArrayList<Cita>): RecyclerView.Adapter<Ci
     override fun onBindViewHolder(holder: CitaAdapter.MyViewHolder, position: Int) {
 
         val cita: Cita=citaList[position]
-        holder.firstName.text= cita.firstName
-        holder.lastName.text= cita.lastName
-        holder.age.text= cita.age.toString()
+
     }
 
     override fun getItemCount(): Int {
@@ -31,8 +29,5 @@ class CitaAdapter(private val citaList:ArrayList<Cita>): RecyclerView.Adapter<Ci
 
     public class MyViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
 
-        val firstName: TextView =itemView.findViewById(R.id.tvFirstName)
-        val lastName: TextView=itemView.findViewById(R.id.tvLastName)
-        val age: TextView=itemView.findViewById(R.id.tvAge)
     }
 }

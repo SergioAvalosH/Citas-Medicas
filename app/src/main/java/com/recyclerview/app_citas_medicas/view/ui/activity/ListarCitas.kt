@@ -14,7 +14,6 @@ import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
 import com.recyclerview.app_citas_medicas.view.ui.adapter.CitaAdapter
 import kotlinx.android.synthetic.main.activity_crear_cita.*
-import kotlinx.android.synthetic.main.activity_crear_cita.textViewMedico
 import kotlinx.android.synthetic.main.list_citas.*
 
 class ListarCitas : AppCompatActivity(){

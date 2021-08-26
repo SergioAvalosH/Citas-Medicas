@@ -50,14 +50,10 @@ class CitasFragment : Fragment() {
         var view =  inflater.inflate(R.layout.list_citas, container, false)
 
         displayMessage = arguments?.getString("dni")
-        view.tvEspecialidad.text = displayMessage
 
         // Lamacenar el dni y el password
         dni = displayMessage
-        db.collection("citas").document(view.tvEspecialidad.text.toString()).get().addOnSuccessListener {
-            view.tvFechaCitas.setText(it.get("Fecha") as String?)
-            view.tvHoraCitas.setText(it.get("Citas") as String?)
-        }
+
         return view
     }
 
