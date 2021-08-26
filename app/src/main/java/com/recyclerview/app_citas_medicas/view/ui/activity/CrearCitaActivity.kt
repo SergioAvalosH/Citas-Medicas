@@ -3,6 +3,7 @@ package com.recyclerview.app_citas_medicas.view.ui.activity
 import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.content.ContentValues.TAG
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -29,6 +30,8 @@ class CrearCitaActivity : AppCompatActivity() {
     val posit = 1
     private lateinit var tvFecha: TextView
     private lateinit var btnFecha: Button
+
+    private lateinit var volver: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -95,7 +98,12 @@ class CrearCitaActivity : AppCompatActivity() {
         }
 
 
-
+        volver = findViewById(R.id.editarDatosPaciente)
+        volver.setOnClickListener{
+            val intent = Intent(this, PacienteActivity::class.java)
+            intent.putExtra("dni", tvDPaciente.text.toString())
+            startActivity(intent)
+        }
 
 
 

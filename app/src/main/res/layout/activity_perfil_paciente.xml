@@ -83,7 +83,6 @@
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold" />
-
             <TextView
                 android:id="@+id/tvApellidosPaciente"
                 android:layout_width="match_parent"
@@ -137,9 +136,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Editar Perfil"
+                android:text="Volver a menu"
                 android:textStyle="bold" />
-
+<!--
             <Button
                 android:id="@+id/editarContraseñaPaciente"
                 android:layout_width="match_parent"
@@ -148,7 +147,7 @@
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Cambiar Contraseña"
                 android:textStyle="bold"
-                app:backgroundTint="@color/f_letra" />
+                app:backgroundTint="@color/f_letra" />-->
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

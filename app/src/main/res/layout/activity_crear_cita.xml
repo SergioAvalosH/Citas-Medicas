@@ -118,6 +118,17 @@
             android:text="Guardar Cita"
             android:textStyle="bold" />
         <!--Y asi, poner mas XD-->
+        <Button
+            android:id="@+id/editarDatosPaciente"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#870900"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Volver a menu"
+            android:textStyle="bold"
+            app:backgroundTint="#870909" />
     </LinearLayout>
 
 

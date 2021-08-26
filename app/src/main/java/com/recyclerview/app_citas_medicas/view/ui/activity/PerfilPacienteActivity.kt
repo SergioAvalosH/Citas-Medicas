@@ -1,5 +1,6 @@
 package com.recyclerview.app_citas_medicas.view.ui.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -8,6 +9,7 @@ import android.widget.Toast
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class PerfilPacienteActivity : AppCompatActivity() {
 
@@ -42,13 +44,16 @@ class PerfilPacienteActivity : AppCompatActivity() {
         }
 
         editarPerfil = findViewById(R.id.editarDatosPaciente)
-        changePass = findViewById(R.id.editarContraseñaPaciente)
-
         editarPerfil.setOnClickListener{
-            Toast.makeText(this, "No tiene permiso", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, PacienteActivity::class.java)
+            intent.putExtra("dni", dniPaciente.text.toString())
+            startActivity(intent)
         }
-        changePass.setOnClickListener{
-            Toast.makeText(this, "No tiene permiso", Toast.LENGTH_SHORT).show()
-        }
+
+
+        //changePass = findViewById(R.id.editarContraseñaPaciente)
+        //changePass.setOnClickListener{
+        //    Toast.makeText(this, "No tiene permiso", Toast.LENGTH_SHORT).show()
+        //}
     }
 }
