@@ -119,10 +119,6 @@ class CrearCitaActivity : AppCompatActivity() {
             .show()
     }
 
-    fun getEspecialidad(): ArrayList<String> {
-        return datalista
-    }
-
 
     // Para el toolbar Crear Citas Medicas
         //val actionBar = supportActionBar

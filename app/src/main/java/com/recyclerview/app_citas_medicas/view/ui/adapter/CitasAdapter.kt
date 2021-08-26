@@ -5,12 +5,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
 import com.recyclerview.app_citas_medicas.view.ui.activity.CrearCitaActivity
+import com.recyclerview.app_citas_medicas.view.ui.activity.ManageCitas
 
 class CitasAdapter: RecyclerView.Adapter<CitasAdapter.ViewHolder>() {
 
-    private val especialidades = CrearCitaActivity()
+    private val list = ArrayList<String>()
+    val db = Firebase.firestore
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.card_citas, viewGroup, false)
@@ -18,8 +22,14 @@ class CitasAdapter: RecyclerView.Adapter<CitasAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        /*viewHolder.nameEspecialidad.text = especialidades.getEspecialidad()[position]
-        viewHolder.namePatiente.text =*/
+        db.collection("especialidad").get()
+            .addOnSuccessListener { result ->
+                for (document in result) {
+                    val cadena = " ${document.getString("Nombre")}"
+                    list.add(cadena)
+                }
+                viewHolder.nameEspecialidad.text = list[position]
+            }
 
     }
 
@@ -34,6 +44,6 @@ class CitasAdapter: RecyclerView.Adapter<CitasAdapter.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return list.size
     }
 }

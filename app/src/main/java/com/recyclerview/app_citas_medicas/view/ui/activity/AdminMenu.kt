@@ -18,6 +18,10 @@ class AdminMenu : AppCompatActivity() {
             val intent = Intent(this, MedicoEspecialidadMenu::class.java)
             startActivity(intent)
         }
+        btn_manage_citas.setOnClickListener {
+            val intent = Intent(this, ManageCitas::class.java)
+            startActivity(intent)
+        }
         btn_logout.setOnClickListener {
             val intent = Intent(this, ElecLogeo::class.java)
             startActivity(intent)
