@@ -59,6 +59,7 @@
                 app:backgroundTint="#5E71E3"/>
 
             <Button
+                android:id="@+id/btn_manage_citas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -72,6 +73,7 @@
                 app:backgroundTint="#5E71E3"/>
 
             <Button
+                android:id="@+id/btn_logout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"

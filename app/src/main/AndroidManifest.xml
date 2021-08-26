@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Appcitasmedicas">
         <activity
+            android:name=".view.ui.activity.ManageCitas"
+            android:exported="true" />
+        <activity
             android:name=".view.ui.activity.MedicoEspecialidadMenu"
             android:exported="true" />
         <activity android:name=".view.ui.activity.LoginAdmin" />
