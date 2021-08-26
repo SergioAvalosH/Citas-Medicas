@@ -4,37 +4,50 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    card_view:cardBackgroundColor="#fff"
+    card_view:cardBackgroundColor="#227C9D"
     card_view:cardCornerRadius="20dp"
     card_view:cardElevation="6dp"
     card_view:contentPadding="4dp">
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp">
-
         <TextView
             android:id="@+id/tv_name_especialidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
             android:gravity="center_horizontal"
-            android:text="@string/tv_especialidad"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
+            android:textColor="@color/white"
+            android:text="Especialidad"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
         <TextView
-            android:id="@+id/tv_name_patient"
+            android:id="@+id/tv_dni"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_name_especialidad"
+            android:layout_below="@+id/tv_name_especialidad"
             android:gravity="center_horizontal"
-            android:text="@string/tv_paciente"
+            android:textColor="@color/white"
+            android:text="DNI"
             android:textSize="16sp" />
-
+        <TextView
+            android:id="@+id/tv_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dni"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:text="fecha"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_fecha"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:text="hora"
+            android:textSize="16sp" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

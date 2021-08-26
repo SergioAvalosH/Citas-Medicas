@@ -13,20 +13,22 @@ import kotlinx.android.synthetic.main.activity_crear_cita.*
 
 class ManageCitas : AppCompatActivity() {
 
-    /*val db = Firebase.firestore
-    val especialidadesLista = ArrayList<String>()*/
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         this.supportActionBar?.hide()
         setContentView(R.layout.activity_manage_citas)
 
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        val adapter = CitasAdapter()
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        //val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        //val adapter = CitasAdapter()
+        //recyclerView.layoutManager = LinearLayoutManager(this)
         /*val adap =
             ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, especialidadesLista)*/
-        recyclerView.adapter = adapter
+        //recyclerView.adapter = adapter
+
+
     }
 
     /*fun getEspecialidades(): ArrayList<String> {
