@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.recyclerview.app_citas_medicas.R
-import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicador_Act_Frag
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
@@ -24,7 +23,6 @@ class HomeFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private lateinit var comunicator: Comunicador_Act_Frag
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

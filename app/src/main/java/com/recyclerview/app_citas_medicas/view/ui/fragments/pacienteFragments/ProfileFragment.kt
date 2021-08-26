@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
-import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
 import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -29,7 +28,6 @@ class ProfileFragment : Fragment() {
 
     val db = Firebase.firestore
     // Para pasar datos al otro fragment
-    private lateinit var comunicator: Comunicator_Paciente
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
