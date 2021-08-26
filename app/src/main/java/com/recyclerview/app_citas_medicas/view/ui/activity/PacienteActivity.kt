@@ -44,6 +44,12 @@ class PacienteActivity : AppCompatActivity(){
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        //ver citas
+        verCitas.setOnClickListener{
+            val intent = Intent(this, ListarCitas::class.java)
+            intent.putExtra("dni", mensajeBienvenidaDNI.text.toString())
+            startActivity(intent)
+        }
 
 
         // Para crear una nueva cita

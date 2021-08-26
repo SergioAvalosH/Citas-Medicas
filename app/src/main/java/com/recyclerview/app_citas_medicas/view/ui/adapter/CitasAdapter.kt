@@ -5,45 +5,41 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
+import com.recyclerview.app_citas_medicas.view.ui.activity.Cita
 import com.recyclerview.app_citas_medicas.view.ui.activity.CrearCitaActivity
-import com.recyclerview.app_citas_medicas.view.ui.activity.ManageCitas
 
-class CitasAdapter: RecyclerView.Adapter<CitasAdapter.ViewHolder>() {
+class CitasAdapter(private val citaList : ArrayList<Cita>): RecyclerView.Adapter<CitasAdapter.MyViewHolder>() {
 
-    private val list = ArrayList<String>()
-    val db = Firebase.firestore
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
-    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.card_citas, viewGroup, false)
-        return ViewHolder(view)
-    }
-
-    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        db.collection("especialidad").get()
-            .addOnSuccessListener { result ->
-                for (document in result) {
-                    val cadena = " ${document.getString("Nombre")}"
-                    list.add(cadena)
-                }
-                viewHolder.nameEspecialidad.text = list[position]
-            }
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_citas,
+            parent,false)
+        return MyViewHolder(itemView)
 
     }
 
-    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        var nameEspecialidad: TextView
-        var namePatiente: TextView
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
-        init {
-            nameEspecialidad = itemView.findViewById(R.id.tv_name_especialidad)
-            namePatiente = itemView.findViewById(R.id.tv_name_patient)
-        }
+        val currentitem = citaList[position]
+
+        holder.especialidad.text = currentitem.Especialidad
+        holder.fecha.text = currentitem.Fecha
+        holder.hora.text = currentitem.Hora
+
     }
 
     override fun getItemCount(): Int {
-        return list.size
+
+        return citaList.size
+    }
+
+
+    class MyViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
+
+        val especialidad : TextView = itemView.findViewById(R.id.tvEspecialidadCitas)
+        val fecha : TextView = itemView.findViewById(R.id.tvFechaCitas)
+        val hora : TextView = itemView.findViewById(R.id.tvHoraCitas)
+
     }
 }

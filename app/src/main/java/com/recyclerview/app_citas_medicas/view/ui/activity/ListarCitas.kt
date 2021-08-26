@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.os.Bundle
 import android.util.Log
 import android.widget.ArrayAdapter
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,16 +18,36 @@ import kotlinx.android.synthetic.main.activity_crear_cita.*
 //import kotlinx.android.synthetic.main.activity_crear_cita.textViewMedico
 import kotlinx.android.synthetic.main.list_citas.*
 
-class ListarCitas : AppCompatActivity(){
-    val db= Firebase.firestore
+class ListarCitas : AppCompatActivity() {
+
+
+    val db = Firebase.firestore
+
     var especialidad=""
     var fecha=""
     var hora=""
     var DNI=""
-    override fun onCreate(savedInstanceState: Bundle?){
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.list_citas)
+        setContentView(R.layout.listar)
+        val especialidad=findViewById(R.id.tviewEspecialidad) as TextView
+        val fecha=findViewById(R.id.tviewFecha) as TextView
+        val hora=findViewById(R.id.tviewHora) as TextView
         db.collection("citas")
+            .get()
+            .addOnSuccessListener { result ->
+                for (document in result) {
+                    Log.d("existe", "${document.id} => ${document.data}")
+
+                    especialidad.text=document.getString("Especialidad")
+                    fecha.text=document.getString("Fecha")
+                    hora.text=document.getString("Hora")
+                }
+            }
+            .addOnFailureListener { exception ->
+                Log.w("no existe", "Error getting documents.", exception)
+            }
+        /*db.collection("citas")
             .addSnapshotListener{querySnapshot,error->
                 if(error!=null){
                     mensaje(error.message!!)
@@ -48,5 +69,6 @@ class ListarCitas : AppCompatActivity(){
             .setMessage(s)
             .setPositiveButton("OK"){d,i->}
             .show()
+    }*/
     }
 }
