@@ -2,14 +2,18 @@ package com.recyclerview.app_citas_medicas.view.ui.activity
 
 import android.app.AlertDialog
 import android.app.DatePickerDialog
+import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.*
+import androidx.core.view.get
 import com.recyclerview.app_citas_medicas.R
 import kotlinx.android.synthetic.main.activity_crear_cita.*
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_register_pacient.*
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -18,8 +22,11 @@ class CrearCitaActivity : AppCompatActivity() {
 
     val db = Firebase.firestore
     var datalista=ArrayList<String>()
+    var cadena2=ArrayList<String>()
+    var namelista=ArrayList<String>()
     var horalista=ArrayList<String>()
-    var medico=""
+    var medico = ""
+    val posit = 1
     private lateinit var tvFecha: TextView
     private lateinit var btnFecha: Button
 
@@ -27,22 +34,19 @@ class CrearCitaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_cita)
 
-        db.collection("especialidad")
-            .addSnapshotListener{querySnapshot,error->
-                if(error!=null){
-                    mensaje(error.message!!)
-                    return@addSnapshotListener
-                }
-                for(document in querySnapshot!!){
+        val dni: String? = intent.getStringExtra("dni")
+        tvDPaciente.text=dni
+
+        db.collection("especialidad").get()
+            .addOnSuccessListener { result ->
+                for (document in result) {
                     var cadena=" ${document.getString("Nombre")}"
                     datalista.add(cadena)
-                    medico="${document.getString("Medico")}"
 
                 }
-                EspSpinner.adapter=ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,datalista)
-                textViewMedico.text=medico
+                val adapter=ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,datalista)
+                EspSpinner.adapter = adapter
             }
-
 
         tvFecha=findViewById(R.id.tvFecha)
         btnFecha=findViewById(R.id.btnFecha)
@@ -73,9 +77,23 @@ class CrearCitaActivity : AppCompatActivity() {
 
 
                 }
-                SpinnerHora.adapter=ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,horalista)
-                
+                var adap=ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,horalista)
+                EspSpinner.adapter=adap
             }
+
+
+        bntGuardarCita.setOnClickListener {
+            db.collection("citas").document(tvDPaciente.text.toString()).set(
+                hashMapOf(
+                    "DNI" to dni,
+                    "Especialidad" to EspSpinner.selectedItem,
+                    "Fecha" to tvFecha,
+                    "Hora" to  EspSpinner.selectedItem
+                )
+            )
+        }
+
+
 
 
 

@@ -3,8 +3,6 @@ package com.recyclerview.app_citas_medicas.view.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -14,20 +12,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
-import com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.EditPacienteProfileFragment
-import com.recyclerview.app_citas_medicas.view.ui.fragments.pacienteFragments.ProfileFragment
-import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicador_Act_Frag
-import com.recyclerview.app_citas_medicas.view.ui.interfaces.Comunicator_Paciente
-import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.view.*
 import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_profile.*
-import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 class PacienteActivity : AppCompatActivity(){
 
     private lateinit var map:GoogleMap
     private val db = Firebase.firestore
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_paciente)
@@ -46,14 +36,16 @@ class PacienteActivity : AppCompatActivity(){
             startActivity(intent)
         }
 
+        val dni: String? = intent.getStringExtra("dni")
+        mensajeBienvenidaDNI.text= dni
+
         // Para crear una nueva cita
         crearCitaPaciente.setOnClickListener{
             val intent = Intent(this, CrearCitaActivity::class.java)
+            intent.putExtra("dni", mensajeBienvenidaDNI.text.toString())
             startActivity(intent)
         }
 
-        val dni: String? = intent.getStringExtra("dni")
-        mensajeBienvenidaDNI.text= dni
 
         // Pra ver perfil
         verPerfil.setOnClickListener{

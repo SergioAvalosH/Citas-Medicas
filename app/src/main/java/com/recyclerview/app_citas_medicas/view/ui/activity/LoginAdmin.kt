@@ -1,5 +1,4 @@
 package com.recyclerview.app_citas_medicas.view.ui.activity
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,7 +10,6 @@ import com.recyclerview.app_citas_medicas.R
 import kotlinx.android.synthetic.main.activity_login_admin.*
 import kotlinx.android.synthetic.main.activity_register_pacient.*
 import kotlinx.android.synthetic.main.fragment_login_paciente.*
-
 class LoginAdmin : AppCompatActivity() {
     val db = Firebase.firestore
     lateinit var usuario: EditText

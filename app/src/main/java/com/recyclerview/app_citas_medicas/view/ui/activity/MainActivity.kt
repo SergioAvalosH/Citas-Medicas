@@ -3,16 +3,11 @@ package com.recyclerview.app_citas_medicas.view.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.EditText
-import androidx.navigation.Navigation
-import android.view.View
 import android.widget.Toast
-import androidx.fragment.app.Fragment
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
-import com.recyclerview.app_citas_medicas.view.ui.fragments.LoginPaciente
 import kotlinx.android.synthetic.main.activity_register_pacient.*
 import kotlinx.android.synthetic.main.fragment_login_paciente.*
 
@@ -24,7 +19,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_login_paciente)
-
         tvIngresar.setOnClickListener {
             usuario = findViewById(R.id.tvUser)
             contraseña = findViewById(R.id.tvLPassword)
@@ -48,13 +42,12 @@ class MainActivity : AppCompatActivity() {
                             startActivity(intent)
                         } else {
                             if (tipobd == tipoadmin) {
-                                Toast.makeText(this, "Es un administrador !!!!! ", Toast.LENGTH_SHORT).show()
-                                /*val intent = Intent(this, AdminMenu::class.java)
-                                startActivity(intent)
+                                Toast.makeText(this, "Es un administrador !!!!! " +
+                                        "Intente Nuevamente", Toast.LENGTH_SHORT).show()
                                 tvPDNI.text.clear()
                                 tvPName.text.clear()
                                 tvPSurname.text.clear()
-                                tvPPassword.text.clear()*/
+                                tvPPassword.text.clear()
                             }
                         }
                     } else {
