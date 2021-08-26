@@ -56,16 +56,6 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/crearCitaPaciente"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_margin="10dp"
-                android:fontFamily="@font/poppins_semibold"
-                app:backgroundTint="@color/f_letra"
-                android:text="Listar cita"
-                app:cornerRadius="20dp" />
-
-            <Button
                 android:id="@+id/ListarCitaPaciente"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"

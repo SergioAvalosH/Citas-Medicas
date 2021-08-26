@@ -17,8 +17,7 @@
             android:exported="true" />
         <activity android:name=".view.ui.activity.LoginAdmin" />
         <activity
-            android:name=".view.ui.activity.PerfilPacienteActivity"
-            android:parentActivityName=".view.ui.activity.PacienteActivity" />
+            android:name=".view.ui.activity.PerfilPacienteActivity" />
         <activity android:name=".view.ui.activity.ElecLogeo" />
         <activity
             android:name=".view.ui.activity.EditProfileManager"
@@ -28,8 +27,7 @@
             android:exported="true" />
         <activity android:name=".view.ui.activity.RegisterPacient" />
         <activity
-            android:name=".view.ui.activity.CrearCitaActivity"
-            android:parentActivityName=".view.ui.activity.PacienteActivity" />
+            android:name=".view.ui.activity.CrearCitaActivity" />
         <activity
             android:name=".view.ui.activity.UbicacionActivity"
             android:parentActivityName=".view.ui.activity.PacienteActivity" />
