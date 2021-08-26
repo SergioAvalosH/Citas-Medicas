@@ -34,7 +34,7 @@ class LoginAdmin : AppCompatActivity() {
                     tipobd = it.get("Tipo").toString()
                     if (user == userbd && password == passwordbd) {
                         if (tipobd == tipoadmin) {
-                            val intent = Intent(this, AdminMenu::class.java)
+                            //val intent = Intent(this, AdminMenu::class.java)
                             startActivity(intent)
                         } else {
                             if (tipobd == tipopaciente) {
