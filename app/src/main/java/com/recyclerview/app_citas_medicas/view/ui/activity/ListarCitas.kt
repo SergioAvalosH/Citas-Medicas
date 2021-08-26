@@ -12,8 +12,9 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
-import com.recyclerview.app_citas_medicas.view.ui.adapter.CitaAdapter
+//import com.recyclerview.app_citas_medicas.view.ui.adapter.CitaAdapter
 import kotlinx.android.synthetic.main.activity_crear_cita.*
+//import kotlinx.android.synthetic.main.activity_crear_cita.textViewMedico
 import kotlinx.android.synthetic.main.list_citas.*
 
 class ListarCitas : AppCompatActivity(){
@@ -32,12 +33,11 @@ class ListarCitas : AppCompatActivity(){
                     return@addSnapshotListener
                 }
                 for(document in querySnapshot!!){
-                    DNI=" ${document.getString("DNI")}"
-                    especialidad="${document.getString("especialidad")}"
-                    fecha="${document.getString("fecha")}"
-                    hora="${document.getString("hora")}"
+                    DNI="${document.getString("DNI")}"
+                    especialidad="${document.getString("Especialidad")}"
+                    fecha="${document.getString("Fecha")}"
+                    hora="${document.getString("Hora")}"
                 }
-                tvDNICitas.text=DNI
                 tvEspecialidadCitas.text=especialidad
                 tvFechaCitas.text=fecha
                 tvHoraCitas.text=hora

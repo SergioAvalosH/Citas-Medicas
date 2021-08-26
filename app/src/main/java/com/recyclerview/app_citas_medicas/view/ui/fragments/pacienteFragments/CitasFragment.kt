@@ -42,7 +42,7 @@ class CitasFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(
+    /*override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
@@ -51,11 +51,9 @@ class CitasFragment : Fragment() {
 
         displayMessage = arguments?.getString("dni")
 
-        // Lamacenar el dni y el password
-        dni = displayMessage
 
-        return view
-    }
+        return
+    }*/
 
     companion object {
         /**
