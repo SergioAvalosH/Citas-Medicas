@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgound_gradient"
     app:cardElevation="8dp"
     android:layout_margin="16dp">
     
@@ -13,6 +14,32 @@
         android:layout_marginLeft="16dp"
         android:layout_marginVertical="6dp"
         android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DNI:"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDNICitas"
+                android:layout_marginStart="8dp"
+                android:text="Ginecologia"
+                android:textColor="@color/black"
+                android:layout_marginLeft="8dp" />
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -23,7 +50,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="First Name"
+                android:text="Especialidad:"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold">
@@ -32,9 +59,37 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvFirstName"
+                android:id="@+id/tvEspecialidadCitas"
                 android:layout_marginStart="8dp"
-                android:text="Sergio"
+                android:text="Ginecologia"
+                android:textColor="@color/black"
+                android:layout_marginLeft="8dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFechaCitas"
+                android:layout_marginStart="8dp"
+                android:text=""
                 android:textColor="@color/black"
                 android:layout_marginLeft="8dp" />
 
@@ -49,7 +104,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Last Name"
+                android:text="Hora:"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold">
@@ -58,35 +113,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvLastName"
+                android:id="@+id/tvHoraCitas"
                 android:layout_marginStart="8dp"
-                android:text="Avalos"
-                android:textColor="@color/black"
-                android:layout_marginLeft="8dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Age"
-                android:textColor="@color/black"
-                android:textSize="26sp"
-                android:textStyle="bold">
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tvAge"
-                android:layout_marginStart="8dp"
-                android:text="15"
+                android:text=""
                 android:textColor="@color/black"
                 android:layout_marginLeft="8dp" />
 

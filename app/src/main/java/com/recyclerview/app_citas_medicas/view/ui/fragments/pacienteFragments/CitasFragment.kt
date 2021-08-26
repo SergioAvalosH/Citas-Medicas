@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.recyclerview.app_citas_medicas.R
+import kotlinx.android.synthetic.main.fragment_edit_paciente_profile.view.*
+import kotlinx.android.synthetic.main.list_citas.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +25,14 @@ class CitasFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private var displayMessage: String? = ""
+
+    val db = Firebase.firestore
+    var dni :String?=""
+    var especialidad: String? = ""
+    var fecha: String? = ""
+    var hora:String?= ""
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +47,18 @@ class CitasFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_citas, container, false)
+        var view =  inflater.inflate(R.layout.list_citas, container, false)
+
+        displayMessage = arguments?.getString("dni")
+        view.tvEspecialidad.text = displayMessage
+
+        // Lamacenar el dni y el password
+        dni = displayMessage
+        db.collection("citas").document(view.tvEspecialidad.text.toString()).get().addOnSuccessListener {
+            view.tvFechaCitas.setText(it.get("Fecha") as String?)
+            view.tvHoraCitas.setText(it.get("Citas") as String?)
+        }
+        return view
     }
 
     companion object {

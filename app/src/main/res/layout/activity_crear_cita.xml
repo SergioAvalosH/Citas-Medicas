@@ -65,7 +65,9 @@
         <Spinner
             android:id="@+id/EspSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_spinner"/>
 
 
 
@@ -83,18 +85,27 @@
 
         <Button
             android:id="@+id/btnFecha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_calendar_today_24"
+            />
+        <TextView
+            android:id="@+id/tvHora"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Fecha"
-            android:textStyle="bold" />
-
+            android:gravity="center"
+            android:text="Elija su Horario"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
         <Spinner
             android:id="@+id/SpinnerHora"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_spinner"/>
 
         <Button
             android:id="@+id/bntGuardarCita"
@@ -103,6 +114,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:fontFamily="@font/poppins_semibold"
+            android:layout_margin="16dp"
             android:text="Guardar Cita"
             android:textStyle="bold" />
         <!--Y asi, poner mas XD-->
